@@ -1,0 +1,1 @@
+# Curs_VCGL_2024_fructe
