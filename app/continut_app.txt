@@ -1,0 +1,6 @@
+Aplicatia WEB/Flask va avea ca fiesier principal fisierul: <nume_grupa>_<nume_tema>.py, situat directorul app din repository.
+
+Fiecare student va alege un element specific temei (cazul nostru un fruct diferit de ceea ce a fost deja ales).
+
+In aplicatia principala, vor fi adaugate trei rute, una pentru element (fructul ales, ex mar), si cate una pentru fiecare informatie specifica (ex.
+culoare_mar, descriere_mar).
