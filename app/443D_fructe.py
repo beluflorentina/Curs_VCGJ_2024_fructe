@@ -19,7 +19,7 @@ def index():
     return ret
 
 @app.route('/guava',methods=['GET'])
-def view_guava()
+def view_guava():
 	culoare = culoare_guava()
 	descriere = descriere_guava()
 	
@@ -42,7 +42,7 @@ def view_guava()
 	return ret
 
 @app.route('/guava/culoare',methods=['GET'])
-def view_culoare_guava()
+def view_culoare_guava():
 	culoare = culoare_guava()
 
 	ret = "<h1>Culoare Guava: </h1>"
@@ -54,7 +54,7 @@ def view_culoare_guava()
 	return ret;
 
 @app.route('/guava/descriere',methods=['GET'])
-def view_descriere_guava()
+def view_descriere_guava():
 	descriere = descriere_guava()
 	
 	ret ="<h1>Descriere Guava:</h1>"
