@@ -43,6 +43,8 @@ def view_culoare_guava():
 	ret += f"<a href={url_for('index')}>[fructe]</a> | " 
 	ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
 	
+	ret+= "<h2> </h2>"
+	ret+= culoare		
 	return ret;
 
 @app.route('/guava/descriere',methods=['GET'])
@@ -55,6 +57,7 @@ def view_descriere_guava():
 	ret += f"<a href={url_for('index')}>[fructe]</a> | " 
 	ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
 	
+	ret+= "<h2> </h2>"
 	ret += descriere        
 	return ret;
 
