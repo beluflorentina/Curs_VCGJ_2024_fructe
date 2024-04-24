@@ -1,19 +1,12 @@
 from flask import Flask, url_for
 from lib.biblioteca_fructe import *
 
-#from app.lib import network
-#from app.lib import ubuntu
-#from app.grafice.exemplu_func_grad_2 import valori_x, valori_y, genereaza_grafice
-
-print('Fructe')
-
-
-
 app = Flask(__name__)
 
-@app.route("/", methods=['GET'])
+@app.route('/', methods=['GET'])
 def index():
     ret = "<h1>FRUCTE</h1>"
+
     ret +=f"<a href={url_for('view_guava')}>Guava - Grigoras Marin-Jan</a> <br/>" 
 
     return ret
@@ -38,7 +31,8 @@ def view_guava():
 	ret += "<h2>Culoare: </h2>"
 
 	ret+= culoare
-
+	
+	
 	return ret
 
 @app.route('/guava/culoare',methods=['GET'])
@@ -46,10 +40,8 @@ def view_culoare_guava():
 	culoare = culoare_guava()
 
 	ret = "<h1>Culoare Guava: </h1>"
-
-        #Links
-        ret += f"<a href={url_for('index')}>[fructe]</a> | " 
-        ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
+	ret += f"<a href={url_for('index')}>[fructe]</a> | " 
+	ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
 	
 	return ret;
 
@@ -61,10 +53,10 @@ def view_descriere_guava():
 
 	#Links
 	ret += f"<a href={url_for('index')}>[fructe]</a> | " 
-        ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
+	ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
 	
 	ret += descriere        
-        return ret;
+	return ret;
 
 @app.cli.command()
 def test():
