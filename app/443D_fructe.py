@@ -41,7 +41,7 @@ def view_culoare_guava():
 
 	ret = "<h1>Culoare Guava: </h1>"
 	ret += f"<a href={url_for('index')}>[fructe]</a> | " 
-	ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
+	ret += f"<a href={url_for('view_descriere_guava')}>[descriere]</a>" 
 	
 	ret+= "<h2> </h2>"
 	ret+= culoare		
@@ -55,7 +55,7 @@ def view_descriere_guava():
 
 	#Links
 	ret += f"<a href={url_for('index')}>[fructe]</a> | " 
-	ret += f"<a href={url_for('view_guava')}>[culoare]</a>" 
+	ret += f"<a href={url_for('view_culoare_guava')}>[culoare]</a>" 
 	
 	ret+= "<h2> </h2>"
 	ret += descriere        
