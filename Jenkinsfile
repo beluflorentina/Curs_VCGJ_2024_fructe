@@ -42,7 +42,7 @@ pipeline {
             steps {
                 echo 'Unit testing with Pytest...'
                 sh '''
-                    . app/.venv/bin/activate
+                    . .venv/bin/activate
                     pytest
                 '''
             }
