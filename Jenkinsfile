@@ -45,14 +45,20 @@ pipeline {
                 sh '''
                     cd app;
                     . .venv/bin/activate
-                    pytest
+                    flask --app 443_fructe test;
                 '''
             }
         }
         
         stage('Deploy') {
+            agent any
             steps {
-                echo 'Deploying...'
+                echo "Build ID: ${BUILD_NUMBER}"
+                echo "Creare imagine docker"
+                sh '''
+                    docker build -t curs_vcgj_2024_fructe:v${BUILD_NUMBER} .
+                    docker create --name curs_vcgj_2024_fructe${BUILD_NUMBER} -p 8020:5000 curs_vcgj_2024_fructe:v${BUILD_NUMBER}
+                '''
             }
         }
     }
