@@ -8,7 +8,7 @@ pipeline {
                 sh '''
                     pwd;
                     ls -l;
-		    cd app
+                    cd app
                     python3 -m venv .venv
                     . .venv/bin/activate
                     pip install flask
@@ -22,16 +22,11 @@ pipeline {
             steps {
             	echo 'Pylint...'
                 sh '''
+                    echo 'PATH before activation:'
+                    echo $PATH
                     . .venv/bin/activate
-                    if [ $? -eq 0 ]
-		    then
-    		    	echo "SUCCESS: venv was activated."
-		    else
-    		    	echo "FAIL: cannot activate venv"
-    		    	python3 -m venv .venv
-                        . .venv/bin/activate
-		    fi
-		    
+                    echo 'PATH after activation:'
+                    echo $PATH
                     pylint --exit-zero lib/*.py
                     pylint --exit-zero test/*.py
                     pylint --exit-zero 443_fructe.py
@@ -43,7 +38,11 @@ pipeline {
             steps {
             	echo 'Unit testing with Pytest...'
                 sh '''
+                    echo 'PATH before activation:'
+                    echo $PATH
                     . .venv/bin/activate
+                    echo 'PATH after activation:'
+                    echo $PATH
                     pytest
                 '''
             }
@@ -57,4 +56,3 @@ pipeline {
         }
     }
 }
-
