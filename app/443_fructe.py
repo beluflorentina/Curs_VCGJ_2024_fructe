@@ -1,6 +1,8 @@
 from flask import Flask, url_for
 from lib.biblioteca_fructe import *
 
+import sys
+
 app = Flask(__name__)
 
 
