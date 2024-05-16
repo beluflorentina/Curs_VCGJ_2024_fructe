@@ -3,7 +3,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 import sys
-sys.path.append("../")
+sys.path.append("../app/")
 
 import lib.biblioteca_fructe as fructe
 
