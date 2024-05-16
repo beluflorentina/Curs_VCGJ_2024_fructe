@@ -8,7 +8,7 @@ pipeline {
                 sh '''
                     pwd;
                     ls -l;
-		            cd app
+		    cd app
                     python3 -m venv .venv
                     . .venv/bin/activate
                     pip install flask
