@@ -31,9 +31,9 @@ pipeline {
                         . .venv/bin/activate
                     fi
                     
-                    pylint --exit-zero app/lib/*.py
-                    pylint --exit-zero app/test/*.py
-                    pylint --exit-zero app/443_fructe.py
+                    pylint --exit-zero lib/*.py
+                    pylint --exit-zero test/*.py
+                    pylint --exit-zero 443_fructe.py
                 '''
             }
         }
