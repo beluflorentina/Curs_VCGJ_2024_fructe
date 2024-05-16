@@ -1,8 +1,0 @@
-#!/bin/bash
-#LINUX
-export FLASK_APP=443_fructe
-
-#WINDOWS
-#set FLASK_APP=443_fructe
-
-flask --app 443_fructe.py --debug run
