@@ -21,6 +21,7 @@ pipeline {
             steps {
                 echo 'Pylint...'
                 sh '''
+                    cd app;
                     . .venv/bin/activate
                     if [ $? -eq 0 ]
                     then
@@ -42,6 +43,7 @@ pipeline {
             steps {
                 echo 'Unit testing with Pytest...'
                 sh '''
+                    cd app;
                     . .venv/bin/activate
                     pytest
                 '''
