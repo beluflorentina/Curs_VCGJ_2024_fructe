@@ -33,7 +33,7 @@ pipeline {
 		    
                     pylint --exit-zero lib/*.py
                     pylint --exit-zero tests/*.py
-                    pylint --exit-zero sysinfo.py
+                    pylint --exit-zero 443_fructe.py
                 '''
             }
         }
