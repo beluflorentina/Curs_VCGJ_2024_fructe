@@ -4,11 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            	echo 'Building...'
+                echo 'Building...'
                 sh '''
-                    pwd;
+                    cd app;
                     ls -l;
-		    cd app
                     python3 -m venv .venv
                     . .venv/bin/activate
                     pip install flask
@@ -20,35 +19,34 @@ pipeline {
         
         stage('pylint - calitate cod') {
             steps {
-            	echo 'Pylint...'
+                echo 'Pylint...'
                 sh '''
                     . .venv/bin/activate
                     if [ $? -eq 0 ]
-		    then
-    		    	echo "SUCCESS: venv was activated."
-		    else
-    		    	echo "FAIL: cannot activate venv"
-    		    	python3 -m venv .venv
+                    then
+                        echo "SUCCESS: venv was activated."
+                    else
+                        echo "FAIL: cannot activate venv"
+                        python3 -m venv .venv
                         . .venv/bin/activate
-		    fi
-		    
-                    pylint --exit-zero lib/*.py
-                    pylint --exit-zero test/*.py
-                    pylint --exit-zero 443_fructe.py
+                    fi
+                    
+                    pylint --exit-zero app/lib/*.py
+                    pylint --exit-zero app/test/*.py
+                    pylint --exit-zero app/443_fructe.py
                 '''
             }
         }
         
         stage('Unit Testing') {
             steps {
-            	echo 'Unit testing with Pytest...'
+                echo 'Unit testing with Pytest...'
                 sh '''
-                    . .venv/bin/activate
+                    . ./app/.venv/bin/activate
                     pytest
                 '''
             }
         }
-        
         
         stage('Deploy') {
             steps {
