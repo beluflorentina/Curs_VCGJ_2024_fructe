@@ -43,7 +43,6 @@ pipeline {
             	echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate
-		    cd /app/test
                     pytest
                 '''
             }
