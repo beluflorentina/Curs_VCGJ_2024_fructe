@@ -44,7 +44,7 @@ pipeline {
                 sh '''
                     . .venv/bin/activate
                     cd app
-                    pytest .
+                    python3 -m pytest -v
                 '''
             }
         }
