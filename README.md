@@ -16,19 +16,31 @@ După ce am finalizat etapa de funcționare a mașinii virtuale trebuie să ne a
 
 Instalarea Git și a editorului de text Gedit este esențială pentru gestionarea codului sursă și efectuarea modificărilor necesare pentru tema aleasă.Git ne permite să urmărim schimbările și să colaborăm eficient într-un mediu remote, în timp ce Gedit oferă un mediu de editare simplu și eficient, adecvat lucrului local. Prima imagine ilustrează instalarea cu succes a utilitarului Git pe Ubuntu, iar în cea de-a doua imagine se confirmă faptul că programul de editare Gedit a fost instalat corect.
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-05.png)
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-22.png)
+
+Pentru a actualiza sistemul cu noile pachete instalate vom utiliza comanda:
+
+* sudo apt update
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-34-14.png)
 
 Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să obținem o clonă a fișierului din linkul de github:
 
 ![image]()
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
 
 Verificăm dacă avem instalat Python pe sistemul nostru de operare, în cazul nostru, Linux. Figura de mai jos ilustrează deja că sistemul de operare utilizează Python pentru a rula cu succes fișierele care au extensia .py.
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-49-11.png)
+
+Pentru a putea vedea dacă în directorul de lucru există fișiere cu extensia .py vom utiliza comanda:
+
+* ls -l
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-52-30.png)
 
 După ce am instalat Python, următorul pas este să instalăm pachetele necesare pentru proiectul nostru. Aceste pachete pot include biblioteci și framework-uri specifice pentru dezvoltarea aplicației noastre.
 
@@ -36,19 +48,9 @@ După ce am instalat Python, următorul pas este să instalăm pachetele necesar
 * Pytest
 * Pylint
 
-# FLASK
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-09-02.png)
 
-![image]()
-
-# PYTEST
-
-![image]()
-
-# PYLINT
-
-![image]()
-
-Înainte de a instala framework-urile de python este important să lucrăm într-un mediu virtual. Dacă nu avem instalat un astfel de mediu de lucru o putem face cu comanda:
+Înainte de a instala framework-urile de python este important să lucrăm într-un mediu virtual. Dacă nu avem instalat un mediu de lucru virtual putem folosi comanda:
 
 *  python3 -m venv .venv
 
@@ -56,17 +58,31 @@ După ce am instalat mediul virtual, este necesară activarea "venv" pentru a fa
 
 * pip install -r quickrequirements.txt
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-02-49.png)
 
-Pentru a afișa pachetele deja instalate utilizăm comanda:
+Pentru a afișa pachetele deja instalate vom utiliza comanda:
 
 * pip freeze
 
-Dacă dorim să modificăm conținutul din fișierele deja create putem utiliza utilitarul Vim.
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-10-36.png)
 
-După ce am instalat utilitarul Vim îl putem utiliza din terminal cu comanda vim <nume_fisier>:
+Dacă dorim să modificăm conținutul din fișierele deja create vom utiliza utilitarul Gedit.
 
+După ce am instalat utilitarul Gedit îl putem utiliza din terminal cu comanda gedit <nume_fisier>:
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-14-09.png)
+
+Pentru a testa manual aplicatia vom utiliza comanda:
+
+* python3 -m pytest -v
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-17-19.png)
+
+Mai departe sunt prezentate modalitatile prin care vom rula aplicatia web:
+
+# 1. Local
+Pentru a rula aplicatia local sunt necesare urmatoarele lucruri: in primul rand, vom activa mediul virtual care ne va ajuta sa rulam aplicatia fara a avea erori si in al doilea rand, utilizand comenzile de mai jos, in ordinea in care sunt scrise:
+* export FLASK_APP=<nume_aplicatie>
+* flask --app <nume_fisier.py> --debug run
 
 ![image]()
