@@ -45,7 +45,7 @@ pipeline {
                 sh '''
                     cd app;
                     . .venv/bin/activate
-                    flask --app 443_fructe test;
+                    python3 -m pytest -v
                 '''
             }
         }
