@@ -6,7 +6,7 @@ Am început prin instalarea unei mașini virtuale pe un sistem de operare Window
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Instalare%20VM/Screenshot%202024-05-20%20135903.png)
 
-Am verificat. Mașina este funcțională:
+Am verificat. Mașina virtuală este funcțională.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Instalare%20VM/Screenshot%20from%202024-05-20%2015-21-50.png)
 
