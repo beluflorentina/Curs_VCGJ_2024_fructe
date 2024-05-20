@@ -239,11 +239,17 @@ Pentru a sincroniza branch-urile main_[nume_branch] și devel_[nume_branch] se u
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-21-44.png)
 
-În final, putem vizualiza acum că branch-ul main_[nume_branch] are același conținut după ce am utilizat "merge" între branch-uri pe repository-ul remote.
+În final, putem vizualiza acum că branch-ul main_[nume_branch] a fost actualizat cu modificările din devel_[nume_branch] după ce am realizat "merge" din devel_[nume_branch] în main_[nume_branch] pe repository-ul remote.
+
+Pentru a actualiza acum repository-ul local după ce am modificat în branch-urile prezentate vom executa în terminal comanda:
+
+* git pull
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-17%2010-08-14.png)
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-30-50.png)
+
+Mai jos sunt ilustrate modificările apărute în urma editării fișierelor aplicației.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-28-40.png)
 
