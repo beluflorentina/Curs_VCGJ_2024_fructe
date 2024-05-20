@@ -249,6 +249,23 @@ Pentru a actualiza acum repository-ul local după ce am modificat în branch-uri
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-30-50.png)
 
-Mai jos sunt ilustrate modificările apărute în urma editării fișierelor aplicației.
+Mai jos sunt ilustrate modificările apărute în urma editării fișierului aplicației.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-17%2009-48-18.png)
+
+# 4. Jenkins
+Jenkins este un server de automatizare open-source care ne ajută să automatizăm diverse sarcini legate de dezvoltarea software, cum ar fi construirea, testarea și implementarea aplicației. Utilizarea Jenkins ne permite să economisim timp și să reducem erorile umane în procesul de dezvoltare.
+
+Cum funcționează Jenkins?
+Jenkins utilizează job-uri și pipeline-uri. Un job reprezintă o sarcină individuală de automatizare. Fiecare job poate reprezenta un proces de construcție, testare sau implementare a unui proiect software. Un pipeline este o suită de joburi care sunt interconectate și configurează procesul complet de livrare a software-ului. Jenkins poate extrage codul sursă din diverse sisteme de control al versiunilor (cum ar fi Git). După ce codul este extras, Jenkins execută scripturile de construcție (de exemplu, Gradle) pentru a compila codul. După compilare, Jenkins rulează testele automate pentru a verifica dacă noul cod nu introduce erori.
+
+Care sunt avantajele utilizării Jenkins?
+* automatizare completă: automatizează procesele repetitive, economisind timp și reducând erorile umane.
+* integrare ușoară: se integrează cu numeroase instrumente și tehnologii utilizate în dezvoltarea software.
+* scalabilitate: poate fi extins cu ajutorul plugin-urilor pentru a îndeplini cerințe specifice proiectului.
+* monitorizare și raportare: oferă vizibilitate completă asupra stării proiectelor prin rapoarte detaliate și notificări în timp real.
+
+Mai jos este ilustrată funcționarea server-ului Jenkins și a pipeline-ului Jenkins:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-16%2013-33-19.png)
+
