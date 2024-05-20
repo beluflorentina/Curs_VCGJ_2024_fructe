@@ -53,7 +53,15 @@ Se deschide interfața web a aplicației așa cum este prezentată în imaginea 
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-47-52.png)
 
-Fișierul Jenkinsfile are conținutul de mai jos:
+Fișierul Jenkins are conținutul din imagine:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2022-24-53.png)
+
+Configurarea pipeline-ului Jenkins este ilustrată în imaginea de mai jos:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-47-34.png)
+
+După cum se poate observa se dorește să se testeze codul din Jenkinsfile, utilizând link-ul de pe Github, iar la branch a fost setat branch-ul devel_[nume_branch].
 
 În pagina următoare vizualizam testele care s-au creat în urma execuției pipeline-ului. Plugin-urile care au fost utilizate sunt următoarele:
 
