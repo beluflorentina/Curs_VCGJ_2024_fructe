@@ -251,6 +251,4 @@ Pentru a actualiza acum repository-ul local după ce am modificat în branch-uri
 
 Mai jos sunt ilustrate modificările apărute în urma editării fișierelor aplicației.
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-28-40.png)
-
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-17%2009-48-18.png)
