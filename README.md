@@ -51,7 +51,7 @@ Se deschide interfața web a aplicației așa cum este prezentată în imaginea 
 
 În imaginea următoare se poate vedea structura folder-ului Curs_VCGJ_2024_fructe:
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-47-52.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-40.png)
 
 Fișierul Jenkins are conținutul din imagine:
 
@@ -68,11 +68,11 @@ După cum se poate observa se dorește să se testeze codul din Jenkinsfile, uti
 * Open Blue Ocean
 * Stage View
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-49-38.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-27.png)
 
 Dacă accesăm plugin-ul Open Blue Ocean putem vizualiza testele care s-au realizat asupra aplicației noastre:
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-48-21.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-16.png)
   
 Instalarea Git și a editorului de text Gedit este esențială pentru gestionarea codului sursă și efectuarea modificărilor necesare pentru tema aleasă. Git ne permite să urmărim schimbările și să colaborăm eficient într-un mediu remote, în timp ce Gedit oferă un mediu de editare simplu și eficient, adecvat lucrului local. Prima imagine ilustrează instalarea cu succes a utilitarului Git pe Ubuntu, iar în cea de-a doua imagine se confirmă faptul că programul de editare Gedit a fost instalat corect.
 
@@ -343,10 +343,10 @@ Care sunt avantajele utilizării Jenkins?
 
 Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-20%2021-16-51.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-01-20.png)
 
-În urma execuției pipeline-ului putem vizualiza în imaginea de mai jos că s-a creat un nou container Docker cu tag-ul v55:
+În urma execuției pipeline-ului putem vizualiza în imaginea de mai jos că s-a creat un nou container Docker cu tag-ul v57.
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-20%2021-28-18.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-07-34.png)
 
 
