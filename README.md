@@ -37,6 +37,14 @@ Se vizualizează imaginea creată cu comanda:
 
 Avem imaginea curs_vcgj_2024_fructe, în care se creează mediul virtual numit venv. Se instalează pachetele necesare aplicației și se implementează codul aplicației, conform Dockerfile.
 
+Verificăm dacă avem instalat Jenkins pe Ubuntu. Figura de mai jos ilustrează deja că sistemul de operare are instalat Jenkins.
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-24-07.png)
+
+Pentru a rula server-ul de Jenkins introducem în terminal comanda jenkins:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-16%2013-33-19.png)
+
 Instalarea Git și a editorului de text Gedit este esențială pentru gestionarea codului sursă și efectuarea modificărilor necesare pentru tema aleasă. Git ne permite să urmărim schimbările și să colaborăm eficient într-un mediu remote, în timp ce Gedit oferă un mediu de editare simplu și eficient, adecvat lucrului local. Prima imagine ilustrează instalarea cu succes a utilitarului Git pe Ubuntu, iar în cea de-a doua imagine se confirmă faptul că programul de editare Gedit a fost instalat corect.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-05.png)
@@ -265,7 +273,12 @@ Care sunt avantajele utilizării Jenkins?
 * scalabilitate: poate fi extins cu ajutorul plugin-urilor pentru a îndeplini cerințe specifice proiectului.
 * monitorizare și raportare: oferă vizibilitate completă asupra stării proiectelor prin rapoarte detaliate și notificări în timp real.
 
-Mai jos este ilustrată funcționarea server-ului Jenkins și a pipeline-ului Jenkins:
+Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-16%2013-33-19.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-20%2021-16-51.png)
+
+In urma executiei pipeline-ului putem vizualiza in imaginea de mai jos ca s-a creat un nou container Docker cu tag-ul v55:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-20%2021-28-18.png)
+
 
