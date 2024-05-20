@@ -8,14 +8,14 @@ app = Flask(__name__)
 def index():
     ret = "<h1>Fructe</h1>"
     
-    ret += f"<a href={url_for('view_acai')}>Ackee - Burlacel George</a> <br/>"
+    ret += f"<a href={url_for('view_ackee')}>Ackee - Burlacel George</a> <br/>"
 
     return ret
 
 
     
 @app.route('/ackee', methods=['GET'])
-def view_acai():
+def view_ackee():
 	culoare = culoare_ackee()
 	descriere = descriere_ackee() 
 	
@@ -23,8 +23,8 @@ def view_acai():
 	
 	#Linkuri
 	ret += f"<a href={url_for('index')}>[fructe]</a> | "
-	ret += f"<a href={url_for('view_culoare_acai')}>[culoare]</a> | "
-	ret += f"<a href={url_for('view_descriere_acai')}>[descriere]</a>"
+	ret += f"<a href={url_for('view_culoare_ackee')}>[culoare]</a> | "
+	ret += f"<a href={url_for('view_descriere_ackee')}>[descriere]</a>"
 	
 	ret += "<h2>Descriere: </h2>"
 	
@@ -44,7 +44,7 @@ def view_culoare_ackee():
     
     ret = "<h1>Culoarea ackee:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
-    ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
+    ret += f"<a href={url_for('view_ackee')}>[ackee]</a> <br/> <br/>"
     ret += culoare
     
     return ret
@@ -55,7 +55,7 @@ def view_descriere_ackee():
     
     ret = "<h1>Descriere ackee:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
-    ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
+    ret += f"<a href={url_for('view_ackee')}>[ackee]</a> <br/> <br/>"
     ret += descriere
     
     return ret
