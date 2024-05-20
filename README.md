@@ -199,3 +199,15 @@ Pentru a opri execuția containerului vom utiliza comanda:
 Pentru a porni execuția containerului vom utiliza comanda:
 
 * docker start <nume_container>
+
+Pentru a vizualiza mesajele generate de aplicația din container în consolă vom atașa containerul utilizând comanda:
+
+* docker container attach <nume_container>
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-20%2018-43-47.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-20%2018-44-00.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-20%2018-44-09.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-20%2018-44-25.png)
