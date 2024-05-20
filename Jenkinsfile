@@ -32,7 +32,7 @@ pipeline {
 		    fi
 		    
                     pylint --exit-zero lib/*.py
-                    pylint --exit-zero tests/*.py
+                    pylint --exit-zero test/*.py
                     pylint --exit-zero 443_fructe.py
                 '''
             }
@@ -43,7 +43,8 @@ pipeline {
             	echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate
-                    pytest
+                    cd app
+                    python3 -m pytest -v
                 '''
             }
         }
