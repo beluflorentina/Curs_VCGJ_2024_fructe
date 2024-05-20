@@ -49,9 +49,13 @@ Pentru a actualiza sistemul cu noile pachete instalate vom utiliza comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-34-14.png)
 
-Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să obținem o clonă a fișierului din linkul de github:
+Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să obținem o clonă a fișierului din linkul de github. Se copiază link-ul din imaginea de mai jos:
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2019-06-23.png)
+
+După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
+
+* git clone <url_repository>
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
 
