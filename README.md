@@ -14,7 +14,30 @@ După ce am finalizat etapa de funcționare a mașinii virtuale trebuie să ne a
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-18-08.png)
 
-Instalarea Git și a editorului de text Gedit este esențială pentru gestionarea codului sursă și efectuarea modificărilor necesare pentru tema aleasă.Git ne permite să urmărim schimbările și să colaborăm eficient într-un mediu remote, în timp ce Gedit oferă un mediu de editare simplu și eficient, adecvat lucrului local. Prima imagine ilustrează instalarea cu succes a utilitarului Git pe Ubuntu, iar în cea de-a doua imagine se confirmă faptul că programul de editare Gedit a fost instalat corect.
+Verificăm dacă avem instalat Docker pe Ubuntu. Figura de mai jos ilustrează deja că sistemul de operare are instalat Docker.
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2018-00-37.png)
+
+După ce am verificat că Docker a fost instalat se creează fișierul Dockerfile care are conținutul de mai jos:
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-52-08.png)
+
+Se salvează fișierul în directorul principal.
+
+Se execută comanda de mai jos:
+
+* docker build -t curs_vcgj_2024_fructe:v01 .
+  
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-17-41.png)
+
+Se vizualizează imaginea creată cu comanda:
+
+* docker images
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-18-10.png)
+
+Avem imaginea curs_vcgj_2024_fructe, în care se creează mediul virtual numit venv. Se instalează pachetele necesare aplicației și se implementează codul aplicației, conform Dockerfile.
+
+Instalarea Git și a editorului de text Gedit este esențială pentru gestionarea codului sursă și efectuarea modificărilor necesare pentru tema aleasă. Git ne permite să urmărim schimbările și să colaborăm eficient într-un mediu remote, în timp ce Gedit oferă un mediu de editare simplu și eficient, adecvat lucrului local. Prima imagine ilustrează instalarea cu succes a utilitarului Git pe Ubuntu, iar în cea de-a doua imagine se confirmă faptul că programul de editare Gedit a fost instalat corect.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-05.png)
 
@@ -32,7 +55,7 @@ Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației �
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
 
-Verificăm dacă avem instalat Python pe sistemul nostru de operare, în cazul nostru, Linux. Figura de mai jos ilustrează deja că sistemul de operare utilizează Python pentru a rula cu succes fișierele care au extensia .py.
+Verificăm dacă avem instalat Python pe sistemul nostru de operare, în cazul nostru, Linux. Figura de mai jos ilustrează deja că sistemul de operare are instalat Python pentru a rula cu succes fișierele care au extensia .py.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-49-11.png)
 
@@ -60,11 +83,23 @@ După ce am instalat mediul virtual, este necesară activarea "venv" pentru a fa
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-02-49.png)
 
+Conținutul fișierului quickrequirements.txt este ilustrat în imaginea de mai jos:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-19-36.png)
+
 Pentru a afișa pachetele deja instalate vom utiliza comanda:
 
 * pip freeze
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-10-36.png)
+
+În mod alternativ, putem scrie scripturi care să conțină comenzile necesare pentru a rula aplicația.
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2016-54-16.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2016-55-02.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2016-55-36.png)
 
 Dacă dorim să modificăm conținutul din fișierele deja create vom utiliza utilitarul Gedit.
 
@@ -78,11 +113,89 @@ Pentru a testa manual aplicatia vom utiliza comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-17-19.png)
 
-Mai departe sunt prezentate modalitatile prin care vom rula aplicatia web:
+Pentru a rula cu succes comanda din imagine avem nevoie de importul bibliotecii sys, adăugând în scriptul 443_fructe.py comanda:
+
+* import sys
+
+Conținutul pe care trebuie să îl aibă fișierul de testare este ilustrat în imaginea de mai jos:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-12-56.png)
+
+Biblioteca utilizată este definită după următorii parametri:
+* culoare
+* descriere
+
+Modul de utilizare al parametrilor "culoare" și "descriere" este ilustrat în imaginea de mai jos:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-06-06.png)
+
+Scriptul din imagine este util în realizarea importului bibliotecii fructe în fișierul 443_fructe.py.
+
+
+Mai departe sunt prezentate modalitățile prin care vom rula aplicația web:
 
 # 1. Local
-Pentru a rula aplicatia local sunt necesare urmatoarele lucruri: in primul rand, vom activa mediul virtual care ne va ajuta sa rulam aplicatia fara a avea erori si in al doilea rand, utilizand comenzile de mai jos, in ordinea in care sunt scrise:
+Pentru a rula aplicația local sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
 * export FLASK_APP=<nume_aplicatie>
 * flask --app <nume_fisier.py> --debug run
 
-![image]()
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-22-35.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-23-37.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-23-54.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-24-06.png)
+
+Alte modalitati prin care putem rula local aplicatia sunt prezentate mai jos:
+
+* utilizare scripturi
+  
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-20%2017-28-33.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-01-41.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-02-10.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-02-21.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-02-30.png)
+  
+* comanda python3 <nume_fisier.py>
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-06.png)
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-14.png)
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-21.png)
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-29.png)
+
+# 2. Docker
+Pentru a rula aplicația cu Docker vom executa comanda de mai jos:
+
+* docker run --name curs_vcgj -p 8020:5000 curs_vcgj:v01
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-21.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-32.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-45.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-56.png)
+
+Aceasta va crea containerul și va porni execuția acestuia.
+
+Portul pe calculator unde va răspunde serverul din docker este 8020.
+Portul în interiorul containerului este 5000.
+
+Pentru a vizualiza containerele care rulează vom utiliza comenzile de mai jos:
+* docker ps
+* docker ps -a
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-22-49.png)
+
+Pentru a opri execuția containerului vom utiliza comanda:
+
+* docker stop <nume_container>
+
+Pentru a porni execuția containerului vom utiliza comanda:
+
+* docker start <nume_container>
