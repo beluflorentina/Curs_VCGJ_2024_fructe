@@ -39,7 +39,7 @@ def view_ananas():
 def view_culoare_ananas():
     culoare = culoare_ananas()
 
-    ret = "<h1>Culoarea ananas ma mananca in nas:</h1>"
+    ret = "<h1>Culoarea ananas:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
     ret += f"<a href={url_for('view_ananas')}>[ananas]</a> <br/> <br/>"
     ret += culoare
