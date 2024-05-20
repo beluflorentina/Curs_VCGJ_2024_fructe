@@ -158,7 +158,7 @@ Dacă dorim să modificăm conținutul din fișierele deja create vom utiliza ut
 
 După ce am instalat utilitarul Gedit îl putem utiliza din terminal cu comanda gedit <nume_fisier>:
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-14-09.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-24-28.png)
 
 Un alt editor de fișiere este vim. Poate fi instalat cu comanda:
 
@@ -172,7 +172,7 @@ Astfel, fisierul pe care dorim să îl modificăm poate fi editat și din termin
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-22-13.png)
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-12-22.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-25-41.png)
 
 Pentru a închide fereastra vim se va utiliza comanda după caz:
 
@@ -192,6 +192,14 @@ Pentru a rula cu succes comanda din imagine avem nevoie de importul bibliotecii 
 Conținutul pe care trebuie să îl aibă fișierul de testare este ilustrat în imaginea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-12-56.png)
+
+Pylint ne ajută să îmbunătățim codul aplicației prin detectarea erorilor ca în figura de mai jos:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-18-04.png)
+
+Comanda este:
+
+* python3 -m pylint 443_fructe.py
 
 Biblioteca utilizată este definită după următorii parametri:
 * culoare
