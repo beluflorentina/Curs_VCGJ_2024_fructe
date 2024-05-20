@@ -49,7 +49,7 @@ Se deschide interfața web a aplicației așa cum este prezentată în imaginea 
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-48-02.png)
 
-În imaginile următoare se poate vedea cum a fost creat folder-ul Curs_VCGJ_2024_fructe, dar și pipeline-ul Jenkinsfile:
+În imaginea următoare se poate vedea structura folder-ului Curs_VCGJ_2024_fructe:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-47-52.png)
 
@@ -298,7 +298,7 @@ Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-20%2021-16-51.png)
 
-In urma executiei pipeline-ului putem vizualiza in imaginea de mai jos ca s-a creat un nou container Docker cu tag-ul v55:
+În urma execuției pipeline-ului putem vizualiza în imaginea de mai jos că s-a creat un nou container Docker cu tag-ul v55:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-20%2021-28-18.png)
 
