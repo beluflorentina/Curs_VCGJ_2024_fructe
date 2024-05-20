@@ -96,6 +96,18 @@ După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
 
+Structura folder-ului Curs_VCGJ_2024_fructe este descrisă în figura următoare:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2023-53-24.png)
+
+Dacă utilizarea comenzii "tree" nu este recunoscută de sistemul de operare atunci este necesară instalarea acesteia cu comanda:
+
+* sudo apt install tree
+
+În exemplul de mai jos comanda "tree" este deja instalată:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-00-46.png)
+
 Verificăm dacă avem instalat Python pe sistemul nostru de operare, în cazul nostru, Linux. Figura de mai jos ilustrează deja că sistemul de operare are instalat Python pentru a rula cu succes fișierele care au extensia .py.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-49-11.png)
@@ -147,6 +159,25 @@ Dacă dorim să modificăm conținutul din fișierele deja create vom utiliza ut
 După ce am instalat utilitarul Gedit îl putem utiliza din terminal cu comanda gedit <nume_fisier>:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-14-09.png)
+
+Un alt editor de fișiere este vim. Poate fi instalat cu comanda:
+
+* sudo apt install vim
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-24-21.png)
+
+Astfel, fisierul pe care dorim să îl modificăm poate fi editat și din terminal cu comanda:
+
+* vim <nume_fisier>
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-22-13.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-12-22.png)
+
+Pentru a închide fereastra vim se va utiliza comanda după caz:
+
+* :q - se iese din programul vim fără modificarea fișierului corespunzător
+* :wq - se iese din programul vim după ce s-au efectuat modificări în fișierul corespunzător
 
 Pentru a testa manual aplicatia vom utiliza comanda:
 
