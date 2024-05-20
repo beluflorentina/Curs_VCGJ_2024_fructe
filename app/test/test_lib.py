@@ -9,20 +9,20 @@ import lib.biblioteca_fructe as fructe
 
 
 
-def test_culoare_acai():
-    culoare = fructe.culoare_acai()
+def test_culoare_ackee():
+    culoare = fructe.culoare_ackee()
 
-    if "rich purple color" in culoare:
+    if "deep red colored rind" in culoare:
         logger.info(f"Functia culoare_acai functioneaza corect: {culoare}")
         assert True
     else:
         logger.error(f"Functia culoare_acai NU functioneaza corect: {culoare}")
         assert False
 
-def test_descriere_acai():
-    descriere = fructe.descriere_acai()
+def test_descriere_ackee():
+    descriere = fructe.descriere_ackee()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
+    if "known as Blighia sapida" in descriere:
         logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
         assert True
     else:

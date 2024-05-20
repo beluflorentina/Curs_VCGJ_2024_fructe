@@ -8,18 +8,18 @@ app = Flask(__name__)
 def index():
     ret = "<h1>Fructe</h1>"
     
-    ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
+    ret += f"<a href={url_for('view_acai')}>Ackee - Burlacel George</a> <br/>"
 
     return ret
 
 
     
-@app.route('/acai', methods=['GET'])
+@app.route('/ackee', methods=['GET'])
 def view_acai():
-	culoare = culoare_acai()
-	descriere = descriere_acai() 
+	culoare = culoare_ackee()
+	descriere = descriere_ackee() 
 	
-	ret = "<h1>Acai</h1>"
+	ret = "<h1>Ackee</h1>"
 	
 	#Linkuri
 	ret += f"<a href={url_for('index')}>[fructe]</a> | "
@@ -38,22 +38,22 @@ def view_acai():
 	return ret
 
 
-@app.route('/acai/culoare', methods=['GET'])
-def view_culoare_acai():
-    culoare = culoare_acai()  
+@app.route('/ackee/culoare', methods=['GET'])
+def view_culoare_ackee():
+    culoare = culoare_ackee()  
     
-    ret = "<h1>Culoarea acai:</h1>"
+    ret = "<h1>Culoarea ackee:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
     ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
     ret += culoare
     
     return ret
 
-@app.route('/acai/descriere', methods=['GET'])
-def view_descriere_acai():
-    descriere = descriere_acai()  
+@app.route('/ackee/descriere', methods=['GET'])
+def view_descriere_ackee():
+    descriere = descriere_ackee()  
     
-    ret = "<h1>Descriere acai:</h1>"
+    ret = "<h1>Descriere ackee:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
     ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
     ret += descriere
