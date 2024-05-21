@@ -52,6 +52,7 @@ pip install pytest
 pip install pylint
 
 Test pytest si rularea aplicatie din flask:
+
 ![imagine_test_manual](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/81457568-4ebb-4eb4-87d9-7c3dead4d6b4)
 
 
@@ -64,10 +65,12 @@ Unit testing, este stagiul in care testam functiile din biblioteca_fructe cu aju
 Deploy este stagiul care testeaza containerizarea aplicatiei prin crearea unei imagini docker si crearea containerului respectiv.
 
 S-a testat cu Jenkins si am obtinut astfel:
-Configurare Jenkins
+Configurare Jenkins:
+
 ![jenkins_config](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/7dc390fa-ac26-4ad2-b203-c87c55dfed9c)
 
-Test Jenkins
+Test Jenkins:
+
 ![test_jenkins](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/4358fb89-f016-49e0-92f6-2b3ac1821a41)
 
 
@@ -83,12 +86,15 @@ Fisierul ne specifica imaginea de baza, va instala frameworkul flask si pytest, 
 
 Imagini Containerizare:
 Activate venv si vizualizare imagini docker:
+
 ![imagini_docker](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/442b48af-ec7b-4ed7-99c3-88103be1636e)
 
-Creearea imaginii
+Creearea imaginii:
+
 ![imagine_creeeare](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/bb4b4a9c-b3ef-4d59-b404-cd11ec81bf1e)
 
 Rulare container:
+
 ![Aplicatie_container](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/ea193391-6dee-454a-b3d3-5af6babf1e8e)
 
 
