@@ -1,6 +1,8 @@
 `Curs_VCGJ_2024_fructe`
 =======================
 
+# Identificator utilizator Borge201
+
 # Cuprins
 1. [Descriere aplicatie](#descriere-aplicatie)
 1. [Functionalitate adaugata](#functionalitate-adaugata)
@@ -42,7 +44,7 @@ Codul a fost adaugat in main_Burlacel_George dar nu in main.
 
 ## Teste manuale
 
-Testarea manuala se bazeaza pe fisierul test_lib.py din directorul app/test, acesta verifica daca anumite segmente de text sunt prezente in pagina, acest fapt ne semnifica ca metodele sunt corecte, alt test este 
+Testarea manuala se bazeaza pe fisierul test_lib.py din directorul app/test, acesta verifica daca anumite segmente de text sunt prezente in pagina, acest fapt ne semnifica ca metodele sunt corecte.
 Testarea manuala si containerizarea s-a efectuat in venv.
 Initial trebuie sa initializam mediul virtual venv, python3 -m venv .venv.
 Comanda . .venv/bin/activate va activa mediul virtual.
@@ -98,9 +100,11 @@ Rulare container:
 ![Aplicatie_container](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/ea193391-6dee-454a-b3d3-5af6babf1e8e)
 
 
-# ID pullrequesturi
+# ID pull requesturi
 
-ID pull requesturi si reviewul acestora (ca o lista sau linkuri)???
+ID pull request merge cu main_Burlacel_George
+a189a7601bb64f25334eed2721e1bed4bfa41a8c  verificat de alt colaborator
+
 
 # Bibliografie 
 
