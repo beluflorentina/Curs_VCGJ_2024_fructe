@@ -195,10 +195,6 @@ Pentru a testa manual aplicatia vom utiliza comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-17-19.png)
 
-Pentru a rula cu succes comanda din imagine avem nevoie de importul bibliotecii sys, adăugând în scriptul 443_fructe.py comanda:
-
-* import sys
-
 Conținutul pe care trebuie să îl aibă fișierul de testare este ilustrat în imaginea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-12-56.png)
