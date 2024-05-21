@@ -5,7 +5,7 @@
 1. [Introducere](#introducere)
 1. [Instalarea și funcționarea mașinii virtuale](#instalarea-și-funcționarea-mașinii-virtuale)
 1. [Configurarea mediului de lucru](#configurarea-mediului-de-lucru)
-   1. [Instalarea header-elor necesare pentru Linux](#instalarea-header-elor-necesare-pentru-linux)
+   1. [Instalare headere necesare pentru Linux](#instalare-headere-necesare-pentru-linux)
    1. [Instalarea și verificarea Docker](#instalarea-și-verificarea-docker)
    1. [Crearea și configurarea Dockerfile](#crearea-și-configurarea-dockerfile)
    1. [Crearea și vizualizarea imaginii Docker](#crearea-și-vizualizarea-imaginii-docker)
@@ -31,11 +31,11 @@
    1. [Rularea aplicației local](#rularea-aplicației-local)
    1. [Rularea aplicației cu Docker](#rularea-aplicației-cu-docker)
    1. [Vizualizarea și gestionarea containerelor Docker](#vizualizarea-și-gestionarea-containerelor-docker)
-1. [Implementarea aplicației în GitHub](#implementarea-aplicației-în-github)
+1. [Încărcarea aplicației pe GitHub](#încărcarea-aplicației-pe-github)
    1. [Sincronizare repository local cu cel remote](#sincronizare-repository-local-cu-cel-remote)
    1. [Sincronizare repository remote între branch-uri](#sincronizare-repository-remote-între-branch-uri)
    1. [Actualizare repository local](#actualizare-repository-local)
-1. [Implementarea și testarea aplicației în Jenkins](#implementarea-și-testarea-aplicației-în-jenkins)
+1. [Testarea aplicației cu Jenkins](#testarea-aplicației-cu-jenkins)
     1. [Descriere Jenkins](#descriere-jenkins)
     1. [Vizualizare pipeline cu Blue Ocean](#vizualizare-pipeline-cu-blue-ocean)
     1. [Crearea unui container Docker în etapa de Deploy](#crearea-unui-container-docker-în-etapa-de-Deploy)
@@ -57,7 +57,7 @@ Am verificat. Mașina virtuală este funcțională.
 
 # Configurarea mediului de lucru
 
-# Instalarea header-elor necesare pentru Linux
+# Instalare headere necesare pentru Linux
 
 După ce am finalizat etapa de funcționare a mașinii virtuale trebuie să ne asigurăm că avem toate tool-urile necesare în proiect. Pentru început deschidem un terminal în mașina virtuală pentru a instala header-ele necesare pentru Linux. Acestea sunt esențiale pentru a asigura compatibilitatea și funcționarea corectă a sistemului de operare.
 
@@ -395,7 +395,7 @@ Pentru a vizualiza mesajele generate de aplicația din container în consolă vo
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-20%2018-44-25.png)
 
-# Implementarea aplicației în GitHub
+# Încărcarea aplicației pe GitHub
 După ce am testat aplicația local următoarea etapă este încărcarea aplicației pe Github. În imaginile de mai jos putem observa procesul prin care proiectul nostru de Github este trimis din repository-ul local într-un repository remote.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2012-47-07.png)
@@ -438,7 +438,7 @@ Mai jos sunt ilustrate modificările apărute în urma editării fișierului apl
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-28-40.png)
 
-# Implementarea și testarea aplicației în Jenkins
+# Testarea aplicației cu Jenkins
 
 # Descriere Jenkins
 
