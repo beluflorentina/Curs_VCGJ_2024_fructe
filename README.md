@@ -475,6 +475,6 @@ Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 * [Instalare Java](https://www.jenkins.io/doc/book/installing/linux/#installation-of-java)
 * [Jenkins](https://www.jenkins.io/doc/)
 * [Instalare Jenkins](https://www.jenkins.io/doc/book/installing/linux/)
-* [sysinfo](https://github.com/crchende/sysinfo/tree/main)
+* [sysinfo](https://github.com/crchende/sysinfo/)
 * [sysinfo](https://github.com/crchende/sysinfo/blob/avansat_main/doc/dockerdoc.md)
 * [jenkinsdemo](https://github.com/crchende/jenkinsdemo?tab=readme-ov-file#instalare-jenkins)
