@@ -145,13 +145,13 @@ După cum se poate observa se dorește să se testeze codul din Jenkinsfile, uti
 * Blue Ocean
 * Stage View
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-27.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2020-01-05.png)
 
 Dacă plugin-urile Blue Ocean și Stage View nu sunt instalate pe server-ul nostru Jenkins pot fi instalate manual, utilizând interfața web a aplicației Jenkins.
 
 Dacă accesăm plugin-ul Blue Ocean putem vizualiza testele care s-au realizat asupra aplicației noastre:
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-16.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2020-01-19.png)
 
 # Instalarea Git și Gedit
   
@@ -465,13 +465,13 @@ Care sunt avantajele utilizării Jenkins?
 
 Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-01-20.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2019-59-58.png)
 
 # Actualizarea imaginilor Docker
 
-În urma execuției pipeline-ului putem vizualiza în imaginea de mai jos că s-a creat un nou container Docker cu tag-ul v57.
+În urma execuției pipeline-ului putem vizualiza în imaginea de mai jos că s-a creat un nou container Docker cu tag-ul v58.
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-07-34.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-21%2020-02-16.png)
 
 # Bibliografie
 * [VirtualBox](https://www.virtualbox.org/wiki/Documentation)
