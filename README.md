@@ -372,6 +372,7 @@ Pentru a rula aplicația cu Docker vom executa comanda de mai jos:
 Aceasta va crea containerul și va porni execuția acestuia.
 
 Portul pe calculator unde va răspunde serverul din docker este 8020.
+
 Portul în interiorul containerului este 5000.
 
 # Vizualizarea și gestionarea containerelor Docker
