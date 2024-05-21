@@ -41,9 +41,19 @@ Verificăm dacă avem instalat Jenkins pe Ubuntu. Figura de mai jos ilustrează 
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-24-07.png)
 
-Pentru a rula server-ul de Jenkins introducem în terminal comanda jenkins:
+Verificăm acum că Java e instalat pe sistemul nostru de operare.
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2010-02-38.png)
+
+Funcționarea Jenkins depinde de Java datorită naturii sale ca aplicație Java, beneficiind de portabilitatea, performanța și securitatea oferite de platforma Java.  
+
+Pentru a rula Jenkins introducem în terminal comanda din imagine:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-16%2013-33-19.png)
+
+După cum se poate observa din imagine Jenkins rulează ca aplicație și nu ca server. Pentru a face ca Jenkins să ruleze doar din comanda "jenkins", după instalare trebuie să oprim și să dezactivăm serviciul din comenzile de mai jos:
+* sudo systemctl stop jenkins
+* sudo systemctl disable jenkins
 
 Se deschide interfața web a aplicației așa cum este prezentată în imaginea de mai jos:
 
