@@ -36,7 +36,7 @@
    1. [Sincronizare repository remote între branch-uri](#sincronizare-repository-remote-între-branch-uri)
    1. [Actualizare repository local](#actualizare-repository-local)
 1. [Implementarea și testarea aplicației în Jenkins](#implementarea-și-testarea-aplicației-în-jenkins)
-    1. [Descrierea Jenkins](#descrierea-jenkins)
+    1. [Descriere Jenkins](#descriere-jenkins)
     1. [Vizualizare pipeline cu Open Blue Ocean](#vizualizare-pipeline-cu-open-blue-ocean)
     1. [Actualizarea imaginilor Docker](#actualizarea-imaginilor-docker)
 1. [Bibliografie](#bibliografie)
@@ -448,7 +448,7 @@ Mai jos sunt ilustrate modificările apărute în urma editării fișierului apl
 
 # Implementarea și testarea aplicației în Jenkins
 
-# Descrierea Jenkins
+# Descriere Jenkins
 
 Jenkins este un server de automatizare open-source care ne ajută să automatizăm diverse sarcini legate de dezvoltarea software, cum ar fi construirea, testarea și implementarea aplicației. Utilizarea Jenkins ne permite să economisim timp și să reducem erorile umane în procesul de dezvoltare.
 
