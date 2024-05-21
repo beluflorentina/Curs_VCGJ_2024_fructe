@@ -18,7 +18,6 @@
    1. [Instalarea Git și Gedit](#instalarea-git-și-gedit)
    1. [Actualizarea sistemului](#actualizarea-sistemului)
    1. [Clonare repository GitHub](#clonare-repository-github)
-   1. [Structură repository git local](#structură-repository-git-local)
    1. [Instalarea și utilizarea Python și a mediului virtual](#instalarea-și-utilizarea-python-și-a-mediului-virtual)
    1. [Instalarea pachetelor necesare](#instalarea-pachetelor-necesare)
    1. [Verificarea pachetelor instalate](#verificarea-pachetelor-instalate)
@@ -136,20 +135,18 @@ Configurarea pipeline-ului Jenkins este ilustrată în imaginea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-47-34.png)
 
-După cum se poate observa se dorește să se testeze codul din Jenkinsfile, utilizând link-ul de pe Github, iar la branch a fost setat branch-ul devel_[nume_branch].
-
 # Instalarea și utilizarea plugin-urilor Jenkins
 
-În pagina următoare vizualizam testele care s-au creat în urma execuției pipeline-ului. Plugin-urile care au fost utilizate sunt următoarele:
+În pagina următoare se vizualizează testele care s-au efectuat în urma executării pipeline-ului. Plugin-urile care au fost utilizate sunt următoarele:
 
 * Blue Ocean
 * Stage View
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2020-01-05.png)
 
-Dacă plugin-urile Blue Ocean și Stage View nu sunt instalate pe server-ul nostru Jenkins pot fi instalate manual, utilizând interfața web a aplicației Jenkins.
+Dacă plugin-urile Blue Ocean și Stage View nu sunt instalate pe Jenkins pot fi instalate manual, utilizând interfața web a aplicației Jenkins.
 
-Dacă accesăm plugin-ul Blue Ocean putem vizualiza testele care s-au realizat asupra aplicației noastre:
+Dacă accesăm plugin-ul Blue Ocean se afișează toate testele care s-au efectuat asupra aplicației:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2020-01-19.png)
 
@@ -171,7 +168,7 @@ Pentru a actualiza sistemul cu noile pachete instalate vom utiliza comanda:
 
 # Clonare repository GitHub
 
-Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să obținem o clonă a fișierului din linkul de github. Se copiază link-ul din imaginea de mai jos:
+Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să clonăm repository-ul de pe Github. Se copiază link-ul din imaginea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2019-06-23.png)
 
@@ -180,20 +177,6 @@ După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
 * git clone <url_repository>
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
-
-# Structură repository git local
-
-Structura folder-ului Curs_VCGJ_2024_fructe este descrisă în figura următoare:
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2023-53-24.png)
-
-Dacă utilizarea comenzii "tree" nu este recunoscută de sistemul de operare atunci este necesară instalarea acesteia cu comanda:
-
-* sudo apt install tree
-
-În exemplul de mai jos comanda "tree" este deja instalată:
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-00-46.png)
 
 # Instalarea și utilizarea Python și a mediului virtual
 
@@ -312,7 +295,7 @@ Pentru a rula aplicația local sunt necesare următoarele condiții: activarea m
 * export FLASK_APP=<nume_aplicatie>
 * flask --app <nume_fisier.py> --debug run
 
-Pentru a verifica funcționarea corectă a aplicației deschidem un browser web și accesăm adresa URL corespunzătoare. Link-urile între pagini pot fi accesate prin:
+Pentru a verifica funcționarea corectă a aplicației deschidem un browser web și accesăm adresa URL corespunzătoare. Link-urile către pagini pot fi accesate prin:
 * ruta standard: http://127.0.0.1:5000
 * rutele aplicației web:
   * fructe: http://127.0.0.1:5000/durian
@@ -327,9 +310,9 @@ Pentru a verifica funcționarea corectă a aplicației deschidem un browser web 
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-23-54.png)
 
-Alte modalitati prin care putem rula local aplicatia sunt prezentate mai jos:
+Alte modalități prin care putem rula local aplicația sunt prezentate mai jos:
 
-* utilizare scripturi
+* utilizare scripturi:
   
   ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-20%2017-28-33.png)
 
@@ -341,7 +324,7 @@ Alte modalitati prin care putem rula local aplicatia sunt prezentate mai jos:
 
   ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-02-30.png)
   
-* comanda python3 <nume_fisier.py>
+* comanda "python3":
 
   ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-06.png)
   ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-14.png)
