@@ -348,7 +348,7 @@ Alte modalitati prin care putem rula local aplicatia sunt prezentate mai jos:
   ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-21.png)
   ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-29.png)
 
-# Rularea locală a aplicației cu Docker
+# Rularea aplicației cu Docker
 Pentru a rula aplicația cu Docker vom executa comanda de mai jos:
 
 * docker run --name curs_vcgj -p 8020:5000 curs_vcgj:v01
