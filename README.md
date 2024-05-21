@@ -465,13 +465,15 @@ Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-07-34.png)
 
 # Bibliografie
+* [VirtualBox](https://www.virtualbox.org/wiki/Documentation)
 * [Instalare VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Instalare Ubuntu 22.04](https://releases.ubuntu.com/jammy/)
 * [Instalare Python](https://www.python.org/downloads/)
+* [Docker](https://docs.docker.com/docker-hub/)
 * [Instalare Docker](https://docs.docker.com/engine/install/ubuntu/)
 * [Git](https://github.com)
 * [Instalare Java](https://www.jenkins.io/doc/book/installing/linux/#installation-of-java)
-* [Jenkins](https://www.jenkins.io/)
+* [Jenkins](https://www.jenkins.io/doc/)
 * [Instalare Jenkins](https://www.jenkins.io/doc/book/installing/linux/)
 * [sysinfo](https://github.com/crchende/sysinfo/tree/main)
 * [sysinfo](https://github.com/crchende/sysinfo/blob/avansat_main/doc/dockerdoc.md)
