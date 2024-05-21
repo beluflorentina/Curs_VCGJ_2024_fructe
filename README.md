@@ -474,6 +474,7 @@ Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-07-34.png)
 
 # Bibliografie
+* [VirtualBox](https://www.virtualbox.org/)
 * [VirtualBox](https://www.virtualbox.org/wiki/Documentation)
 * [Instalare VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Instalare Ubuntu 22.04](https://releases.ubuntu.com/jammy/)
