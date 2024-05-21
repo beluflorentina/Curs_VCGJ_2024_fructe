@@ -307,20 +307,17 @@ Scriptul din imagine este util în realizarea importului bibliotecii fructe în 
 
 # Rularea aplicației
 
-Mai departe sunt prezentate modalitățile prin care vom rula aplicația web:
-
 # Rularea aplicației local
 Pentru a rula aplicația local sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
 * export FLASK_APP=<nume_aplicatie>
 * flask --app <nume_fisier.py> --debug run
 
-Accesul în aplicație se face din browser la adresa din imagine.
-
-Rutele aplicației web sunt următoarele:
-* standard: http://127.0.0.1:5000
-* fructe: http://127.0.0.1:5000/durian
-* culoare: http://127.0.0.1:5000/durian/culoare
-* descriere: http://127.0.0.1:5000/durian/descriere
+Pentru a verifica funcționarea corectă a aplicației deschidem un browser web și accesăm adresa URL corespunzătoare. Link-urile între pagini pot fi accesate prin:
+* ruta standard: http://127.0.0.1:5000
+* rutele aplicației web:
+  * fructe: http://127.0.0.1:5000/durian
+  * culoare: http://127.0.0.1:5000/durian/culoare
+  * descriere: http://127.0.0.1:5000/durian/descriere
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-24-06.png)
 
