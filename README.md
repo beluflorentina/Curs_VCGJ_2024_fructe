@@ -463,13 +463,13 @@ Care sunt avantajele utilizării Jenkins?
 
 # Vizualizare pipeline cu Blue Ocean
 
-Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
+Mai jos este ilustrat un pipeline care a trecut testul cu Jenkins.
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2019-59-58.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2020-52-44.png)
 
 # Actualizarea imaginilor Docker
 
-În urma execuției pipeline-ului putem vizualiza în imaginea de mai jos că s-a creat un nou container Docker cu tag-ul v58.
+Putem vizualiza în imaginea de mai jos că s-a creat un nou container cu tag-ul v58.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-21%2020-02-16.png)
 
