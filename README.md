@@ -37,7 +37,7 @@
    1. [Actualizare repository local](#actualizare-repository-local)
 1. [Implementarea și testarea aplicației în Jenkins](#implementarea-și-testarea-aplicației-în-jenkins)
     1. [Descriere Jenkins](#descriere-jenkins)
-    1. [Vizualizare pipeline cu Open Blue Ocean](#vizualizare-pipeline-cu-open-blue-ocean)
+    1. [Vizualizare pipeline cu Blue Ocean](#vizualizare-pipeline-cu-blue-ocean)
     1. [Actualizarea imaginilor Docker](#actualizarea-imaginilor-docker)
 1. [Bibliografie](#bibliografie)
 
@@ -142,14 +142,14 @@ După cum se poate observa se dorește să se testeze codul din Jenkinsfile, uti
 
 În pagina următoare vizualizam testele care s-au creat în urma execuției pipeline-ului. Plugin-urile care au fost utilizate sunt următoarele:
 
-* Open Blue Ocean
+* Blue Ocean
 * Stage View
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-27.png)
 
-Dacă plugin-urile Open Blue Ocean și Stage View nu sunt instalate pe server-ul nostru Jenkins pot fi instalate manual, utilizând interfața web a aplicației Jenkins.
+Dacă plugin-urile Blue Ocean și Stage View nu sunt instalate pe server-ul nostru Jenkins pot fi instalate manual, utilizând interfața web a aplicației Jenkins.
 
-Dacă accesăm plugin-ul Open Blue Ocean putem vizualiza testele care s-au realizat asupra aplicației noastre:
+Dacă accesăm plugin-ul Blue Ocean putem vizualiza testele care s-au realizat asupra aplicației noastre:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-16.png)
 
@@ -461,7 +461,7 @@ Care sunt avantajele utilizării Jenkins?
 * scalabilitate: poate fi extins cu ajutorul plugin-urilor pentru a îndeplini cerințe specifice proiectului.
 * monitorizare și raportare: oferă vizibilitate completă asupra stării proiectelor prin rapoarte detaliate și notificări în timp real.
 
-# Vizualizare pipeline cu Open Blue Ocean
+# Vizualizare pipeline cu Blue Ocean
 
 Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 
