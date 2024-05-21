@@ -480,6 +480,7 @@ Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 * [Instalare Python](https://www.python.org/downloads/)
 * [Docker](https://docs.docker.com/docker-hub/)
 * [Instalare Docker](https://docs.docker.com/engine/install/ubuntu/)
+* [Gedit](www.gedit.org)
 * [Git](https://github.com)
 * [Instalare Java](https://www.jenkins.io/doc/book/installing/linux/#installation-of-java)
 * [Jenkins](https://www.jenkins.io/doc/)
