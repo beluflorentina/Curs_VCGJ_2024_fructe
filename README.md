@@ -319,6 +319,14 @@ Pentru a rula aplicația local sunt necesare următoarele condiții: activarea m
 * export FLASK_APP=<nume_aplicatie>
 * flask --app <nume_fisier.py> --debug run
 
+Accesul în aplicație se face din browser la adresa din imagine.
+
+Rutele aplicației web sunt următoarele:
+* standard: http://127.0.0.1:5000
+* fructe: http://127.0.0.1:5000/durian
+* culoare: http://127.0.0.1:5000/culoare
+* descriere: http://127.0.0.1:5000/descriere
+
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-22-35.png)
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-23-37.png)
