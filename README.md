@@ -145,9 +145,9 @@ După cum se poate observa se dorește să se testeze codul din Jenkinsfile, uti
 * Open Blue Ocean
 * Stage View
 
-Dacă plugin-urile Open Blue Ocean și Stage View nu sunt instalate pe server-ul nostru Jenkins pot fi instalate manual, utilizând interfața web a aplicației Jenkins.
-
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-27.png)
+
+Dacă plugin-urile Open Blue Ocean și Stage View nu sunt instalate pe server-ul nostru Jenkins pot fi instalate manual, utilizând interfața web a aplicației Jenkins.
 
 Dacă accesăm plugin-ul Open Blue Ocean putem vizualiza testele care s-au realizat asupra aplicației noastre:
 
