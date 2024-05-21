@@ -1,19 +1,19 @@
 `Curs_VCGJ_2024_fructe`
 =======================
 
-#Cuprins
-1. [Descriere aplicatie] (#descriere-aplicatie)
-1. [Functionalitate adaugata] (#functionalitate-adaugata)
-1. [Stadiu] (#stadiu)
-1. [Teste] (#teste)
-   1. [Teste manuale] (#teste-manuale)
-   1. [Teste Jenkins] (#teste-jenkins)
-1. [Integrare] (#integrare)
-1. [Containerizare] (#containerizare)
-1. [ID pull requesturi] (#id-pull-requesturi)
-1. [Bibliografie] (#bibliografie)
+# Cuprins
+1. [Descriere aplicatie](#descriere-aplicatie)
+1. [Functionalitate adaugata](#functionalitate-adaugata)
+1. [Stadiu](#stadiu)
+1. [Teste](#teste)
+   1. [Teste manuale](#teste-manuale)
+   1. [Teste Jenkins](#teste-jenkins)
+1. [Integrare](#integrare)
+1. [Containerizare](#containerizare)
+1. [ID pull requesturi](#id-pull-requesturi)
+1. [Bibliografie](#bibliografie)
 
-#Descriere aplicatie
+# Descriere aplicatie
 
 Aplicatia reprezinta un site web care se bazeaza pe frameworkul Flask.
 Aplicatia afiseaza detalii despre fructul ackee, detalii cum ar fi culoarea si descrierea fructului.
@@ -23,7 +23,7 @@ Paginile fructului (culoare, descriere) sunt definite in functiile din interioru
 Aplicatia include suport pentru containerizare in fisierul Dockerfile din directorul principal al aplicatiei.
 Pipeline-ul pentru Jenkins este definit in fisierul Jenkinsfile.
 
-#Funcitionalitate adaugata
+# Funcitionalitate adaugata
 
 In directorul /app avvem fisierul principal al aplicatiei, 443_fructe.py.
 Acesta contine 4 rute, prima ruta "/" ofera posibilatea de a alege un fruct sa fie vizualizat, a doua ruta "/ackee" ofera informatii despre fruct. Din a doua ruta putem accesa pagina "/" si rutele "/ackee/culoare" si "/ackee/descriere" care se folosesc de functii definite in fisierul biblioteca_fructe.py pentru a afisa informatiile dorite.
@@ -34,13 +34,13 @@ Aplicatia:
 
 ![imagine](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/435d388f-ada9-4732-b0b8-209f2aab4bbc)
 
-#Stadiu
+# Stadiu
 
 Codul a fost adaugat in main_Burlacel_George dar nu in main.
 
-#Teste
+# Teste
 
-##Teste manuale
+## Teste manuale
 
 Testarea manuala se bazeaza pe fisierul test_lib.py din directorul app/test, acesta verifica daca anumite segmente de text sunt prezente in pagina, acest fapt ne semnifica ca metodele sunt corecte, alt test este 
 Testarea manuala si containerizarea s-a efectuat in venv.
@@ -55,7 +55,7 @@ Test pytest si rularea aplicatie din flask:
 ![imagine_test_manual](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/81457568-4ebb-4eb4-87d9-7c3dead4d6b4)
 
 
-##Teste Jenkins
+## Teste Jenkins
 
 Pipelineul in Jenkins a fost definit in fisierul Jenkinsfile in care avem definite stagiile urmatoare:
 Build, care ne creeaza enviromnetul de testare prin activarea mediului venv si instalarea biblitecilor necesare prin executarea de comenzi;
@@ -71,11 +71,11 @@ Test Jenkins
 ![test_jenkins](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/4358fb89-f016-49e0-92f6-2b3ac1821a41)
 
 
-#Integrare
+# Integrare
 
 Se asteapta review pentru integrare in main.
 
-#Containerizare
+# Containerizare
 
 S-a realizat in Docker cu succes.
 Fisierul Dockerfileva fi folosit in enviromentul virtual din venv.
@@ -92,11 +92,11 @@ Rulare container:
 ![Aplicatie_container](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/ea193391-6dee-454a-b3d3-5af6babf1e8e)
 
 
-#ID pullrequesturi
+# ID pullrequesturi
 
 ID pull requesturi si reviewul acestora (ca o lista sau linkuri)???
 
-#Bibliografie 
+# Bibliografie 
 
 https://youtu.be/fS_spm79C5E
 
