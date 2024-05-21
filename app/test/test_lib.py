@@ -13,7 +13,7 @@ import lib.biblioteca_fructe as fructe
 def test_culoare_ananas():
     culoare = fructe.culoare_ananas()
 
-    if "rich purple color" in culoare:
+    if "greenish-yellow fruit" in culoare:
         logger.info(f"Functia culoare_ananas functioneaza corect: {culoare}")
         assert True
     else:
@@ -24,7 +24,7 @@ def test_culoare_ananas():
 def test_descriere_ananas():
     descriere = fructe.descriere_ananas()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
+    if "tropical and subtropical America" in descriere:
         logger.info(f"Functia descriere_ananas functioneaza corect:\n{descriere}")
         assert True
     else:
