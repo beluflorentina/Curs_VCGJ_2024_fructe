@@ -25,8 +25,6 @@ Pipeline-ul pentru Jenkins este definit in fisierul Jenkinsfile.
 
 #Funcitionalitate adaugata
 
-Aplicatia in functiune si cateva explicatii cod poate? + screen??
-
 In directorul /app avvem fisierul principal al aplicatiei, 443_fructe.py.
 Acesta contine 4 rute, prima ruta "/" ofera posibilatea de a alege un fruct sa fie vizualizat, a doua ruta "/ackee" ofera informatii despre fruct. Din a doua ruta putem accesa pagina "/" si rutele "/ackee/culoare" si "/ackee/descriere" care se folosesc de functii definite in fisierul biblioteca_fructe.py pentru a afisa informatiile dorite.
 
@@ -34,6 +32,7 @@ In directorul /app/lib este fisierul biblioteca_fructe.py. Acesta contine fincti
 
 Aplicatia:
 
+![imagine](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/435d388f-ada9-4732-b0b8-209f2aab4bbc)
 
 #Stadiu
 
@@ -53,6 +52,7 @@ pip install pytest
 pip install pylint
 
 Test pytest si rularea aplicatie din flask:
+![imagine_test_manual](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/81457568-4ebb-4eb4-87d9-7c3dead4d6b4)
 
 
 ##Teste Jenkins
@@ -64,6 +64,11 @@ Unit testing, este stagiul in care testam functiile din biblioteca_fructe cu aju
 Deploy este stagiul care testeaza containerizarea aplicatiei prin crearea unei imagini docker si crearea containerului respectiv.
 
 S-a testat cu Jenkins si am obtinut astfel:
+Configurare Jenkins
+![jenkins_config](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/7dc390fa-ac26-4ad2-b203-c87c55dfed9c)
+
+Test Jenkins
+![test_jenkins](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/4358fb89-f016-49e0-92f6-2b3ac1821a41)
 
 
 #Integrare
@@ -77,6 +82,15 @@ Fisierul Dockerfileva fi folosit in enviromentul virtual din venv.
 Fisierul ne specifica imaginea de baza, va instala frameworkul flask si pytest, ne defineste directorul de lucru /app , ne copiaza fisierul aplicatiei intr-o imagine docker, ne defineste urmatoarea environment variable FLASK_APP care reprezinta aplicatia in sine, ne precizeaza portul containerului si in final ne executa comanda in terminal pentru a ne porni aplicatia.
 
 Imagini Containerizare:
+Activate venv si vizualizare imagini docker:
+![imagini_docker](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/442b48af-ec7b-4ed7-99c3-88103be1636e)
+
+Creearea imaginii
+![imagine_creeeare](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/bb4b4a9c-b3ef-4d59-b404-cd11ec81bf1e)
+
+Rulare container:
+![Aplicatie_container](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/ea193391-6dee-454a-b3d3-5af6babf1e8e)
+
 
 #ID pullrequesturi
 
@@ -85,5 +99,6 @@ ID pull requesturi si reviewul acestora (ca o lista sau linkuri)???
 #Bibliografie 
 
 https://youtu.be/fS_spm79C5E
+
 https://www.britannica.com/plant/ackee
 
