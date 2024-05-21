@@ -477,6 +477,7 @@ Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 * [VirtualBox](https://www.virtualbox.org/wiki/Documentation)
 * [Instalare VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Instalare Ubuntu 22.04](https://releases.ubuntu.com/jammy/)
+* [Python](https://www.python.org/)
 * [Instalare Python](https://www.python.org/downloads/)
 * [Docker](https://docs.docker.com/docker-hub/)
 * [Instalare Docker](https://docs.docker.com/engine/install/ubuntu/)
