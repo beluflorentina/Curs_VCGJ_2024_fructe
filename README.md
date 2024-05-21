@@ -24,7 +24,7 @@
    1. [Verificarea pachetelor instalate](#verificarea-pachetelor-instalate)
 1. [Editarea și executarea scripturilor](#editarea-și-executarea-scripturilor)
 1. [Testarea aplicației](#testarea-aplicației)
-   1. [Testarea manuală a aplicației folosind Pytest](#testarea-manuală-a-aplicației-folosind-pytest)
+   1. [Testarea manuală a aplicației cu Pytest](#testarea-manuală-a-aplicației-cu-pytest)
    1. [Verificarea și îmbunătățirea codului cu Pylint](#verificarea-și-îmbunătățirea-codului-cu-pylint)
 1. [Importul bibliotecii utilizate în Python](#importul-bibliotecii-utilizate-în-python)
 1. [Rularea aplicației](#rularea-aplicației)
@@ -276,7 +276,7 @@ Pentru a închide fereastra vim se va utiliza comanda după caz:
 
 # Testarea aplicației
 
-# Testarea manuală a aplicației folosind Pytest
+# Testarea manuală a aplicației cu Pytest
 
 Pentru a testa manual aplicatia vom utiliza comanda:
 
