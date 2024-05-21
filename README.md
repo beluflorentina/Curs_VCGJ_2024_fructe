@@ -271,8 +271,8 @@ Astfel, fisierul pe care dorim să îl modificăm poate fi editat și din termin
 
 Pentru a închide fereastra vim se va utiliza comanda după caz:
 
-* :q - se iese din programul vim fără modificarea fișierului corespunzător
-* :wq - se iese din programul vim după ce s-au efectuat modificări în fișierul corespunzător
+* :q - se iese din programul vim fără salvarea modificărilor în fișierul corespunzător
+* :wq - se iese din programul vim cu salvarea modificărilor în fișierul corespunzător
 
 # Testarea aplicației
 
