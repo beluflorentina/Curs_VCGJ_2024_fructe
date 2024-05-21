@@ -18,7 +18,7 @@
    1. [Instalarea Git și Gedit](#instalarea-git-și-gedit)
    1. [Actualizarea sistemului](#actualizarea-sistemului)
    1. [Clonare repository GitHub](#clonare-repository-github)
-   1. [Structură repository git local](#structura-repository-git-local)
+   1. [Structură repository git local](#structură-repository-git-local)
    1. [Instalarea și utilizarea Python și a mediului virtual](#instalarea-și-utilizarea-python-și-a-mediului-virtual)
    1. [Instalarea pachetelor necesare](#instalarea-pachetelor-necesare)
    1. [Verificarea pachetelor instalate](#verificarea-pachetelor-instalate)
@@ -37,7 +37,7 @@
    1. [Actualizare repository local](#actualizare-repository-local)
 1. [Implementarea și testarea aplicației în Jenkins](#implementarea-și-testarea-aplicației-în-jenkins)
     1. [Descrierea Jenkins](#descrierea-jenkins)
-    1. [Vizualizarea pipeline-ului cu Open Blue Ocean](#vizualizarea-pipeline-ului-cu-open-blue-ocean)
+    1. [Vizualizare pipeline cu Open Blue Ocean](#vizualizare-pipeline-cu-open-blue-ocean)
     1. [Actualizarea imaginilor Docker](#actualizarea-imaginilor-docker)
 1. [Bibliografie](#bibliografie)
 
@@ -169,7 +169,7 @@ Pentru a actualiza sistemul cu noile pachete instalate vom utiliza comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-34-14.png)
 
-# Clonarea repository-ului de pe GitHub
+# Clonare repository GitHub
 
 Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să obținem o clonă a fișierului din linkul de github. Se copiază link-ul din imaginea de mai jos:
 
@@ -181,7 +181,7 @@ După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
 
-# Structura repository-ului git local
+# Structură repository git local
 
 Structura folder-ului Curs_VCGJ_2024_fructe este descrisă în figura următoare:
 
@@ -405,13 +405,13 @@ După ce am testat aplicația local următoarea etapă este încărcarea aplica�
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-16-04.png)
 
-# Sincronizarea repository-ului local cu cel remote
+# Sincronizare repository local cu cel remote
 
 După cum s-a observat modificările din repository-ul local au fost aduse pe Github pe branch-ul pe care l-am selectat înainte de a folosi comanda:
 
 * git push
 
-# Sincronizarea repository-ului remote între branch-uri
+# Sincronizare repository remote între branch-uri
 
 Pentru a sincroniza branch-urile main_[nume_branch] și devel_[nume_branch] se urmărește modalitatea de mai jos:
 
@@ -423,7 +423,7 @@ Pentru a sincroniza branch-urile main_[nume_branch] și devel_[nume_branch] se u
 
 În final, putem vizualiza acum că branch-ul main_[nume_branch] a fost actualizat cu modificările din devel_[nume_branch] după ce am realizat "merge" din devel_[nume_branch] în main_[nume_branch] pe repository-ul remote.
 
-# Actualizarea repository-ului local
+# Actualizare repository local
 
 Pentru a actualiza acum repository-ul local după ce am modificat în branch-urile prezentate vom executa în terminal comanda:
 
@@ -452,7 +452,7 @@ Care sunt avantajele utilizării Jenkins?
 * scalabilitate: poate fi extins cu ajutorul plugin-urilor pentru a îndeplini cerințe specifice proiectului.
 * monitorizare și raportare: oferă vizibilitate completă asupra stării proiectelor prin rapoarte detaliate și notificări în timp real.
 
-# Vizualizarea pipeline-ului cu Open Blue Ocean
+# Vizualizare pipeline cu Open Blue Ocean
 
 Mai jos este ilustrat un pipeline Jenkins care a trecut toate testele:
 
