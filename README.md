@@ -287,6 +287,7 @@ După ce am testat aplicația local următoarea etapă este încărcarea aplica�
 
 Comenzile care au fost utilizate sunt:
 * git checkout devel_Rinciog_Florin
+* git status
 * git add
 * git commit
 * git push
