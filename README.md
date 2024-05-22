@@ -291,7 +291,7 @@ Comenzile care au fost utilizate sunt:
 * git checkout devel_Rinciog_Florin
 * git status
 * git add
-* git commit
+* git commit -m "Actualizare: optimizare și ajustări în cod"
 * git push
 
 # Sincronizarea repository-ului local cu cel remote
