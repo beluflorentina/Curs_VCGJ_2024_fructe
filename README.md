@@ -294,9 +294,9 @@ Comenzile care au fost utilizate sunt:
 
 # Sincronizare repository local cu cel remote
 
-După cum se observă, modificările din repository-ul local au fost aduse pe Github.
-
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-16-04.png)
+
+După cum se observă, modificările din repository-ul local au fost aduse pe Github.
 
 # Sincronizare repository remote între branch-uri
 
