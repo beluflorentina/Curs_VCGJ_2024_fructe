@@ -341,6 +341,8 @@ Care sunt avantajele utilizării Jenkins?
 * scalabilitate: poate fi extins cu ajutorul plugin-urilor pentru a îndeplini cerințe specifice proiectului.
 * monitorizare și raportare: oferă vizibilitate completă asupra stării proiectelor prin rapoarte detaliate și notificări în timp real.
 
+Accesul la server-ul Jenkins se face din browser la adresa http://127.0.0.1:8080
+
 # Vizualizarea pipeline-ului cu Blue Ocean
 
 Mai jos este ilustrat un pipeline care a trecut testul cu Jenkins.
