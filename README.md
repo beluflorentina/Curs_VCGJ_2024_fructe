@@ -80,7 +80,7 @@ Instalarea Git și a editorului de text Gedit este esențială pentru gestionare
 
 Dacă dorim să modificăm conținutul fișierului de aplicație vom utiliza comanda:
 
-* gedit 443_fructe.py:
+* gedit 443_fructe.py
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-24-28.png)
 
