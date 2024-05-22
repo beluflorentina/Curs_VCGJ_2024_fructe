@@ -6,22 +6,10 @@
 1. [Instalarea și funcționarea mașinii virtuale](#instalarea-și-funcționarea-mașinii-virtuale)
 1. [Configurarea mediului de lucru](#configurarea-mediului-de-lucru)
    1. [Instalare headere necesare pentru Linux](#instalare-headere-necesare-pentru-linux)
-   1. [Instalarea și verificarea Docker](#instalarea-și-verificarea-docker)
-   1. [Crearea și configurarea Dockerfile](#crearea-și-configurarea-dockerfile)
-   1. [Crearea și vizualizarea imaginii Docker](#crearea-și-vizualizarea-imaginii-docker)
-   1. [Verificarea și instalarea Java](#verificarea-și-instalarea-java)
-   1. [Instalarea și configurarea Jenkins](#instalarea-și-configurarea-jenkins)
-   1. [Gestionarea aplicației cu Jenkins](#gestionarea-aplicației-cu-jenkins)
-   1. [Crearea și configurarea Jenkinsfile](#crearea-și-configurarea-jenkinsfile)
-   1. [Configurarea pipeline-ului Jenkins](#configurarea-pipeline-ului-jenkins)
-   1. [Instalarea și utilizarea plugin-urilor Jenkins](#instalarea-și-utilizarea-plugin-urilor-jenkins)
-   1. [Instalarea Git și Gedit](#instalarea-git-și-gedit)
+   1. [Tool-urile necesare pentru aplicație](#tool-urile-necesare-pentru-aplicație)
    1. [Actualizarea sistemului](#actualizarea-sistemului)
    1. [Clonare repository GitHub](#clonare-repository-github)
-   1. [Instalarea și utilizarea Python și a mediului virtual](#instalarea-și-utilizarea-python-și-a-mediului-virtual)
-   1. [Instalarea pachetelor necesare](#instalarea-pachetelor-necesare)
-   1. [Verificarea pachetelor instalate](#verificarea-pachetelor-instalate)
-1. [Editarea și executarea scripturilor](#editarea-și-executarea-scripturilor)
+   1. [Crearea mediului virtual în Python](#crearea-mediului-virtual-în-python)
 1. [Testarea aplicației](#testarea-aplicației)
    1. [Testarea manuală a aplicației cu Pytest](#testarea-manuală-a-aplicației-cu-pytest)
    1. [Verificarea și îmbunătățirea codului cu Pylint](#verificarea-și-îmbunătățirea-codului-cu-pylint)
@@ -29,7 +17,6 @@
 1. [Rularea aplicației](#rularea-aplicației)
    1. [Rularea aplicației local](#rularea-aplicației-local)
    1. [Rularea aplicației cu Docker](#rularea-aplicației-cu-docker)
-   1. [Vizualizarea și gestionarea containerelor Docker](#vizualizarea-și-gestionarea-containerelor-docker)
 1. [Încărcarea aplicației pe GitHub](#încărcarea-aplicației-pe-github)
    1. [Sincronizare repository local cu cel remote](#sincronizare-repository-local-cu-cel-remote)
    1. [Sincronizare repository remote între branch-uri](#sincronizare-repository-remote-între-branch-uri)
@@ -62,20 +49,16 @@ După ce am finalizat etapa de funcționare a mașinii virtuale trebuie să ne a
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-18-08.png)
 
-# Instalarea și verificarea Docker
+# Tool-urile necesare pentru aplicație
 
 Verificăm dacă avem instalat Docker pe Ubuntu. Figura de mai jos ilustrează deja că sistemul de operare are instalat Docker.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2018-00-37.png)
 
-# Crearea și configurarea Dockerfile
-
 După ce am verificat că Docker a fost instalat se creează fișierul Dockerfile care are conținutul de mai jos:
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-52-08.png)
 
 Se salvează fișierul în directorul principal.
-
-# Crearea și vizualizarea imaginii Docker
 
 Se execută comanda de mai jos:
 
@@ -91,15 +74,45 @@ Se vizualizează imaginea creată cu comanda:
 
 Avem imaginea curs_vcgj_2024_fructe, în care se creează mediul virtual numit venv. Se instalează pachetele necesare aplicației și se implementează codul aplicației, conform Dockerfile.
 
-# Verificarea și instalarea Java
+Instalarea Git și a editorului de text Gedit este esențială pentru gestionarea codului sursă și efectuarea modificărilor necesare pentru tema aleasă. Git ne permite să urmărim schimbările și să colaborăm eficient într-un mediu remote, în timp ce Gedit oferă un mediu de editare simplu și eficient, adecvat lucrului local. Prima imagine ilustrează instalarea cu succes a utilitarului Git pe Ubuntu, iar în cea de-a doua imagine se confirmă faptul că programul de editare Gedit a fost instalat corect.
 
-Verificăm acum că Java e instalat pe sistemul nostru de operare.
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-05.png)
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-22.png)
+
+Dacă dorim să modificăm conținutul din fișierele deja create putem utiliza comanda gedit <nume_fisier>:
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-24-28.png)
+
+Verificăm dacă avem instalat Python pe sistemul nostru de operare, în cazul nostru, Linux. Figura de mai jos ilustrează deja că sistemul de operare are instalat Python pentru a rula cu succes fișierele care au extensia .py.
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-49-11.png)
+
+Pentru a putea vedea dacă în directorul de lucru există fișiere cu extensia .py vom utiliza comanda:
+
+* ls -l
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-52-30.png)
+
+După ce am instalat Python, următorul pas este să instalăm pachetele necesare pentru proiectul nostru. Aceste pachete pot include biblioteci și framework-uri specifice pentru dezvoltarea aplicației noastre.
+
+* Flask
+* Pytest
+* Pylint
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-09-02.png)
+
+Pentru a afișa pachetele deja instalate vom utiliza comanda:
+
+* pip freeze
+
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-10-36.png)
+
+Verificăm acum dacă Java este instalat pe sistemul nostru de operare.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2010-02-38.png)
 
 Funcționarea Jenkins depinde de Java datorită naturii sale ca aplicație Java, beneficiind de portabilitatea, performanța și securitatea oferite de platforma Java.
-
-# Instalarea și configurarea Jenkins
 
 Verificăm dacă avem instalat Jenkins pe Ubuntu. Figura de mai jos ilustrează deja că sistemul de operare are instalat Jenkins.
 
@@ -113,29 +126,13 @@ După cum se poate observa din imagine Jenkins rulează ca aplicație și nu ca 
 * sudo systemctl stop jenkins
 * sudo systemctl disable jenkins
 
-# Gestionarea aplicației cu Jenkins
-
 Se deschide interfața web a aplicației așa cum este prezentată în imaginea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-48-02.png)
 
-În imaginea următoare se poate vedea structura folder-ului Curs_VCGJ_2024_fructe:
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2002-02-40.png)
-
-# Crearea și configurarea Jenkinsfile
-
-Fișierul Jenkins are conținutul din imagine:
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2022-24-53.png)
-
-# Configurarea pipeline-ului Jenkins
-
 Configurarea pipeline-ului Jenkins este ilustrată în imaginea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-47-34.png)
-
-# Instalarea și utilizarea plugin-urilor Jenkins
 
 În pagina următoare se vizualizează testele care s-au efectuat în urma executării pipeline-ului. Plugin-urile care au fost utilizate sunt următoarele:
 
@@ -150,14 +147,6 @@ Dacă accesăm plugin-ul Blue Ocean se afișează toate testele care s-au efectu
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-21%2020-01-19.png)
 
-# Instalarea Git și Gedit
-  
-Instalarea Git și a editorului de text Gedit este esențială pentru gestionarea codului sursă și efectuarea modificărilor necesare pentru tema aleasă. Git ne permite să urmărim schimbările și să colaborăm eficient într-un mediu remote, în timp ce Gedit oferă un mediu de editare simplu și eficient, adecvat lucrului local. Prima imagine ilustrează instalarea cu succes a utilitarului Git pe Ubuntu, iar în cea de-a doua imagine se confirmă faptul că programul de editare Gedit a fost instalat corect.
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-05.png)
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-22.png)
-
 # Actualizarea sistemului
 
 Pentru a actualiza sistemul cu noile pachete instalate vom utiliza comanda:
@@ -170,7 +159,7 @@ Pentru a actualiza sistemul cu noile pachete instalate vom utiliza comanda:
 
 Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să clonăm repository-ul de pe Github. Se copiază link-ul din imaginea de mai jos:
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2019-06-23.png)
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-22%2010-31-11.png)
 
 După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
 
@@ -178,79 +167,15 @@ După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
 
-# Instalarea și utilizarea Python și a mediului virtual
+# Crearea mediului virtual în Python
 
-Verificăm dacă avem instalat Python pe sistemul nostru de operare, în cazul nostru, Linux. Figura de mai jos ilustrează deja că sistemul de operare are instalat Python pentru a rula cu succes fișierele care au extensia .py.
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-49-11.png)
-
-Pentru a putea vedea dacă în directorul de lucru există fișiere cu extensia .py vom utiliza comanda:
-
-* ls -l
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-52-30.png)
-
-# Instalarea pachetelor necesare
-
-După ce am instalat Python, următorul pas este să instalăm pachetele necesare pentru proiectul nostru. Aceste pachete pot include biblioteci și framework-uri specifice pentru dezvoltarea aplicației noastre.
-
-* Flask
-* Pytest
-* Pylint
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-09-02.png)
-
-Înainte de a instala framework-urile de python este important să lucrăm într-un mediu virtual. Dacă nu avem instalat un mediu de lucru virtual putem folosi comanda:
+Pentru a instala "venv" vom folosi comanda:
 
 *  python3 -m venv .venv
 
-După ce am instalat mediul virtual, este necesară activarea "venv" pentru a facilita utilizarea lui în proiectul nostru. O altă metodă de a instala mult mai simplu framework-urile de python putem crea un fișier text pe care îl salvăm în aceeași locație cu aplicația noastră, în care vor fi incluse numele pachetelor pe care dorim să le instalăm pe calculatorul nostru personal. Comanda pentru a instala aceste pachete este mai jos:
+După ce am instalat mediul virtual, este necesară activarea "venv" pentru a facilita utilizarea lui în proiectul nostru. Vom utiliza comanda:
 
-* pip install -r quickrequirements.txt
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-02-49.png)
-
-Conținutul fișierului quickrequirements.txt este ilustrat în imaginea de mai jos:
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2017-19-36.png)
-
-# Verificarea pachetelor instalate
-
-Pentru a afișa pachetele deja instalate vom utiliza comanda:
-
-* pip freeze
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-10-36.png)
-
-# Editarea și executarea scripturilor
-
-În mod alternativ, putem scrie scripturi care să conțină comenzile necesare pentru a rula aplicația.
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2016-54-16.png)
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2016-55-02.png)
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/scripturi/Screenshot%20from%202024-05-20%2016-55-36.png)
-
-Dacă dorim să modificăm conținutul din fișierele deja create vom utiliza utilitarul Gedit.
-
-După ce am instalat utilitarul Gedit îl putem utiliza din terminal cu comanda gedit <nume_fisier>:
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-24-28.png)
-
-Se pot scrie scripturi, utilizând terminalul din Linux cu vim. Poate fi instalat cu comanda:
-
-* sudo apt install vim
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-24-21.png)
-
-Astfel, fisierul pe care dorim să îl modificăm poate fi editat și din terminal cu comanda:
-
-* vim <nume_fisier>
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2000-22-13.png)
-
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-25-41.png)
+* . .venv/bin/activate
 
 # Testarea aplicației
 
@@ -310,27 +235,6 @@ Pentru a verifica funcționarea corectă a aplicației deschidem un browser web 
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-23-54.png)
 
-Alte modalități prin care putem rula local aplicația sunt prezentate mai jos:
-
-* utilizare scripturi:
-  
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-20%2017-28-33.png)
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-01-41.png)
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-02-10.png)
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-02-21.png)
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-02-30.png)
-  
-* comanda "python3":
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-06.png)
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-14.png)
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-21.png)
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-16%2012-06-29.png)
-
 # Rularea aplicației cu Docker
 Pentru a rula aplicația cu Docker vom executa comanda de mai jos:
 
@@ -349,8 +253,6 @@ Aceasta va crea containerul și va porni execuția acestuia.
 Portul pe calculator unde va răspunde serverul din docker este 8020.
 
 Portul în interiorul containerului este 5000.
-
-# Vizualizarea și gestionarea containerelor Docker
 
 Pentru a vizualiza containerele care rulează vom utiliza comenzile de mai jos:
 * docker ps
