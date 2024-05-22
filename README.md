@@ -216,7 +216,7 @@ Scriptul din imagine este util în realizarea importului bibliotecii fructe în 
 # Rularea aplicației cu Flask
 Pentru a rula aplicația cu Flask sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
 * export FLASK_APP=443_fructe
-* flask --app 443_fructe.py> --debug run
+* flask --app 443_fructe.py --debug run
 
 Pentru a verifica funcționarea corectă a aplicației deschidem un browser web și accesăm adresa URL corespunzătoare. Link-urile către pagini pot fi accesate prin:
 * ruta standard: http://127.0.0.1:5000
