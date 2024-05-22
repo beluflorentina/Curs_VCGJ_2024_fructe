@@ -234,23 +234,28 @@ Pentru a verifica funcționarea corectă a aplicației deschidem un browser web 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_local/Screenshot%20from%202024-05-17%2009-23-54.png)
 
 # Rularea aplicației cu Docker
+
 Pentru a rula aplicația cu Docker vom executa comanda de mai jos:
 
 * docker run --name curs_vcgj_2024_fructe -p 8020:5000 curs_vcgj_2024_fructe:v01
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-21.png)
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-32.png)
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-45.png)
-
-  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-56.png)
 
 Aceasta va crea containerul și va porni execuția acestuia.
 
 Portul pe calculator unde va răspunde serverul din docker este 8020.
 
 Portul în interiorul containerului este 5000.
+
+Aplicația poate fi accesată din browser la adresa http://127.0.0.1:8020
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-21.png)
+
+Link-urile aplicației web pot fi accesate similar ca la punctul anterior.
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-32.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-45.png)
+
+  ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-56.png)
 
 Pentru a vizualiza containerele care rulează vom utiliza comenzile de mai jos:
 * docker ps
