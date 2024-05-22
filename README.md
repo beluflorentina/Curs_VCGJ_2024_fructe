@@ -24,7 +24,6 @@
     1. [Descriere Jenkins](#descriere-jenkins)
     1. [Vizualizare pipeline cu Blue Ocean](#vizualizare-pipeline-cu-blue-ocean)
     1. [Crearea unui container Docker în etapa de Deploy](#crearea-unui-container-docker-în-etapa-de-Deploy)
-1. [Bibliografie](#bibliografie)
 
 # Introducere
 
@@ -346,19 +345,3 @@ Mai jos este ilustrat un pipeline care a trecut testul cu Jenkins.
 După ce am rulat pipeline-ul în Jenkins putem vizualiza în imaginea de mai jos că s-a creat un container cu tag-ul v58.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-21%2020-02-16.png)
-
-# Bibliografie
-* [VirtualBox](https://www.virtualbox.org/wiki/Documentation)
-* [Instalare VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* [Instalare Ubuntu 22.04](https://releases.ubuntu.com/jammy/)
-* [Python](https://www.python.org/)
-* [Instalare Python](https://www.python.org/downloads/)
-* [Docker](https://docs.docker.com/docker-hub/)
-* [Instalare Docker](https://docs.docker.com/engine/install/ubuntu/)
-* [Git](https://github.com)
-* [Instalare Java](https://www.jenkins.io/doc/book/installing/linux/#installation-of-java)
-* [Jenkins](https://www.jenkins.io/doc/)
-* [Instalare Jenkins](https://www.jenkins.io/doc/book/installing/linux/)
-* [sysinfo](https://github.com/crchende/sysinfo/tree/main)
-* [sysinfo](https://github.com/crchende/sysinfo/blob/avansat_main/doc/dockerdoc.md)
-* [jenkinsdemo](https://github.com/crchende/jenkinsdemo?tab=readme-ov-file#instalare-jenkins)
