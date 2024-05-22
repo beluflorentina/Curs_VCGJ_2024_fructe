@@ -140,7 +140,7 @@ Configurarea pipeline-ului Jenkins este ilustrată în imaginea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2021-47-34.png)
 
-În pagina următoare se vizualizează testele care s-au efectuat în urma executării pipeline-ului. Plugin-urile care au fost utilizate sunt următoarele:
+În pagina următoare se vizualizează testele care s-au efectuat în urma executării pipeline-ului cu:
 
 * Blue Ocean
 * Stage View
@@ -169,7 +169,7 @@ Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației �
 
 După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
 
-* git clone <url_repository>
+* git clone https://github.com/beluflorentina/Curs_VCGJ_2024_fructe.git
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
 
@@ -213,8 +213,8 @@ Scriptul din imagine este util în realizarea importului bibliotecii fructe în 
 
 # Rularea aplicației local
 Pentru a rula aplicația local sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
-* export FLASK_APP=<nume_aplicatie>
-* flask --app <nume_fisier.py> --debug run
+* export FLASK_APP=443_fructe
+* flask --app 443_fructe.py> --debug run
 
 Pentru a verifica funcționarea corectă a aplicației deschidem un browser web și accesăm adresa URL corespunzătoare. Link-urile către pagini pot fi accesate prin:
 * ruta standard: http://127.0.0.1:5000
@@ -234,7 +234,7 @@ Pentru a verifica funcționarea corectă a aplicației deschidem un browser web 
 # Rularea aplicației cu Docker
 Pentru a rula aplicația cu Docker vom executa comanda de mai jos:
 
-* docker run --name curs_vcgj -p 8020:5000 curs_vcgj:v01
+* docker run --name curs_vcgj_2024_fructe -p 8020:5000 curs_vcgj_2024_fructe:v01
 
   ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-16%2012-21-21.png)
 
@@ -258,15 +258,15 @@ Pentru a vizualiza containerele care rulează vom utiliza comenzile de mai jos:
 
 Pentru a opri execuția containerului vom utiliza comanda:
 
-* docker stop <nume_container>
+* docker stop curs_vcgj_2024_fructe
 
 Pentru a porni execuția containerului vom utiliza comanda:
 
-* docker start <nume_container>
+* docker start curs_vcgj_2024_fructe
 
 Pentru a vizualiza mesajele generate de aplicația din container în consolă vom atașa containerul utilizând comanda:
 
-* docker container attach <nume_container>
+* docker container attach curs_vcgj_2024_fructe
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Rulare_aplicatie_cu_container/Screenshot%20from%202024-05-20%2018-43-47.png)
 
@@ -285,37 +285,41 @@ După ce am testat aplicația local următoarea etapă este încărcarea aplica�
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-14-35.png)
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-16-04.png)
+Comenzile care au fost utilizate sunt:
+* git checkout devel_Rinciog_Florin
+* git add
+* git commit
+* git push
 
 # Sincronizare repository local cu cel remote
 
-După cum s-a observat modificările din repository-ul local au fost aduse pe Github pe branch-ul pe care l-am selectat înainte de a folosi comanda:
+După cum s-a observat modificările din repository-ul local au fost aduse pe Github.
 
-* git push
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-16-04.png)
 
 # Sincronizare repository remote între branch-uri
 
-Pentru a sincroniza branch-urile main_[nume_branch] și devel_[nume_branch] se urmărește modalitatea de mai jos:
+Pentru a sincroniza branch-urile main_Rinciog_Florin și devel_Rinciog_Florin se urmărește modalitatea de mai jos:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-18-51.png)
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-20-17.png)
 
-![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-21-44.png)
+În final, putem vizualiza acum că branch-ul main_Rinciog_Florin a fost actualizat cu modificările din devel_Rinciog_Florin după ce am făcut merge din devel_Rinciog_Florin în main_Rinciog_Florin pe repository-ul remote.
 
-În final, putem vizualiza acum că branch-ul main_[nume_branch] a fost actualizat cu modificările din devel_[nume_branch] după ce am realizat "merge" din devel_[nume_branch] în main_[nume_branch] pe repository-ul remote.
+![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-21-44.png)
 
 # Actualizare repository local
 
-Pentru a actualiza acum repository-ul local după ce am modificat în branch-urile prezentate vom executa în terminal comanda:
-
+Pentru a sincroniza acum repository-ul local cu cel remote de pe branch-ul main_Rinciog_Florin vom executa în terminal următoarele comenzi:
+* git checkout main_Rinciog_Florin
 * git pull
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-17%2010-08-14.png)
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-30-50.png)
 
-Mai jos sunt ilustrate modificările apărute în urma editării fișierului aplicației.
+Mai jos sunt ilustrate modificările apărute în Github asupra fișierului de aplicație.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-28-40.png)
 
