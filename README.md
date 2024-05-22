@@ -13,8 +13,8 @@
    1. [Testarea manuală a aplicației cu Pytest](#testarea-manuală-a-aplicației-cu-pytest)
    1. [Verificarea și îmbunătățirea codului cu Pylint](#verificarea-și-îmbunătățirea-codului-cu-pylint)
 1. [Importul bibliotecii utilizate în Python](#importul-bibliotecii-utilizate-în-python)
-1. [Rularea aplicației](#rularea-aplicației)
-   1. [Rularea aplicației local](#rularea-aplicației-local)
+1. [Rularea aplicației local](#rularea-aplicației-local)
+   1. [Rularea aplicației cu Flask](#rularea-aplicației-cu-flask)
    1. [Rularea aplicației cu Docker](#rularea-aplicației-cu-docker)
 1. [Încărcarea aplicației pe GitHub](#încărcarea-aplicației-pe-github)
    1. [Sincronizare repository local cu cel remote](#sincronizare-repository-local-cu-cel-remote)
@@ -209,9 +209,9 @@ Modul de utilizare al parametrilor "culoare" și "descriere" este ilustrat în i
 
 Scriptul din imagine este util în realizarea importului bibliotecii fructe în fișierul 443_fructe.py.
 
-# Rularea aplicației
-
 # Rularea aplicației local
+
+# Rularea aplicației cu Flask
 Pentru a rula aplicația local sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
 * export FLASK_APP=443_fructe
 * flask --app 443_fructe.py> --debug run
