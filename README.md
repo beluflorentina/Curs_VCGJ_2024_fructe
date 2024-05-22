@@ -9,7 +9,6 @@
    1. [Tool-urile necesare pentru aplicație](#tool-urile-necesare-pentru-aplicație)
    1. [Actualizarea sistemului](#actualizarea-sistemului)
    1. [Clonare repository GitHub](#clonare-repository-github)
-   1. [Crearea mediului virtual în Python](#crearea-mediului-virtual-în-python)
 1. [Testarea aplicației](#testarea-aplicației)
    1. [Testarea manuală a aplicației cu Pytest](#testarea-manuală-a-aplicației-cu-pytest)
    1. [Verificarea și îmbunătățirea codului cu Pylint](#verificarea-și-îmbunătățirea-codului-cu-pylint)
@@ -108,6 +107,14 @@ Pentru a afișa pachetele deja instalate vom utiliza comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2016-10-36.png)
 
+Pentru a instala "venv" vom folosi comanda:
+
+*  python3 -m venv .venv
+
+După ce am instalat mediul virtual, este necesară activarea "venv" pentru a facilita utilizarea lui în proiectul nostru. Vom utiliza comanda:
+
+* . .venv/bin/activate
+
 Verificăm acum dacă Java este instalat pe sistemul nostru de operare.
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2010-02-38.png)
@@ -166,16 +173,6 @@ După ce link-ul a fost copiat el trebuie introdus în terminal cu comanda:
 * git clone <url_repository>
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-43-36.png)
-
-# Crearea mediului virtual în Python
-
-Pentru a instala "venv" vom folosi comanda:
-
-*  python3 -m venv .venv
-
-După ce am instalat mediul virtual, este necesară activarea "venv" pentru a facilita utilizarea lui în proiectul nostru. Vom utiliza comanda:
-
-* . .venv/bin/activate
 
 # Testarea aplicației
 
