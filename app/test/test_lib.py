@@ -1,14 +1,11 @@
 import logging
-import sys
-import os
-
-# Ensure the correct path is added
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '/home/mihai/laborator_scc/Curs_VCGJ_2024_fructe/app/lib')))
-
-import lib.biblioteca_fructe as fructe
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+import sys
+sys.path.append("../")
+
+import lib.biblioteca_fructe as fructe
 
 def test_culoare_pruna():
     culoare = fructe.culoare_pruna()
@@ -27,3 +24,4 @@ def test_descriere_pruna():
     else:
         logger.error(f"Functia descriere_pruna NU functioneaza corect:\n{descriere}")
         assert False
+

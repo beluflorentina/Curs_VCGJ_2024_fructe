@@ -1,10 +1,13 @@
 pipeline {
     agent any
+    environment {
+        PYTHONPATH = "${env.WORKSPACE}/app"
+    }
     
     stages {
         stage('Build') {
             steps {
-            	echo 'Building...'
+                echo 'Building...'
                 sh '''
                     pwd;
                     ls -l;
@@ -19,18 +22,18 @@ pipeline {
         
         stage('pylint - calitate cod') {
             steps {
-            	echo 'Pylint...'
+                echo 'Pylint...'
                 sh '''
                     . .venv/bin/activate
                     if [ $? -eq 0 ]
-		    then
-    		    	echo "SUCCESS: venv was activated."
-		    else
-    		    	echo "FAIL: cannot activate venv"
-    		    	python3 -m venv .venv
+                    then
+                        echo "SUCCESS: venv was activated."
+                    else
+                        echo "FAIL: cannot activate venv"
+                        python3 -m venv .venv
                         . .venv/bin/activate
-		    fi
-		    
+                    fi
+                    
                     pylint --exit-zero lib/*.py
                     pylint --exit-zero test/*.py
                     pylint --exit-zero 443_fructe.py
@@ -40,15 +43,14 @@ pipeline {
         
         stage('Unit Testing') {
             steps {
-            	echo 'Unit testing with Pytest...'
+                echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate
                     cd app
-                    python3 -m pytest -v
+                    pytest -v
                 '''
             }
         }
-        
         
         stage('Deploy') {
             steps {
