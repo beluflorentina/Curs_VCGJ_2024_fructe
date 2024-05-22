@@ -78,7 +78,9 @@ Instalarea Git și a editorului de text Gedit este esențială pentru gestionare
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-30-22.png)
 
-Dacă dorim să modificăm conținutul din fișierele deja create putem utiliza comanda gedit <nume_fisier>:
+Dacă dorim să modificăm conținutul fișierului de aplicație vom utiliza comanda:
+
+* gedit 443_fructe.py
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-21%2001-24-28.png)
 
