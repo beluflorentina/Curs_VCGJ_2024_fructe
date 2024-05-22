@@ -5,24 +5,24 @@
 1. [Introducere](#introducere)
 1. [Instalarea și funcționarea mașinii virtuale](#instalarea-și-funcționarea-mașinii-virtuale)
 1. [Configurarea mediului de lucru](#configurarea-mediului-de-lucru)
-   1. [Instalare headere necesare pentru Linux](#instalare-headere-necesare-pentru-linux)
+   1. [Instalarea header-elor necesare pentru Linux](#instalarea-header-elor-necesare-pentru-linux)
    1. [Tool-urile necesare pentru aplicație](#tool-urile-necesare-pentru-aplicație)
    1. [Actualizarea sistemului](#actualizarea-sistemului)
-   1. [Clonare repository GitHub](#clonare-repository-github)
+   1. [Clonarea repository-ului GitHub](#clonarea-repository-ului-github)
 1. [Testarea aplicației](#testarea-aplicației)
    1. [Testarea manuală a aplicației cu Pytest](#testarea-manuală-a-aplicației-cu-pytest)
    1. [Verificarea și îmbunătățirea codului cu Pylint](#verificarea-și-îmbunătățirea-codului-cu-pylint)
 1. [Importul bibliotecii utilizate în Python](#importul-bibliotecii-utilizate-în-python)
-1. [Rularea aplicației](#rularea-aplicației)
-   1. [Rularea aplicației local](#rularea-aplicației-local)
+1. [Aplicația](#aplicația)
+   1. [Rularea aplicației cu Flask](#rularea-aplicației-cu-flask)
    1. [Rularea aplicației cu Docker](#rularea-aplicației-cu-docker)
 1. [Încărcarea aplicației pe GitHub](#încărcarea-aplicației-pe-github)
-   1. [Sincronizare repository local cu cel remote](#sincronizare-repository-local-cu-cel-remote)
-   1. [Sincronizare repository remote între branch-uri](#sincronizare-repository-remote-între-branch-uri)
-   1. [Actualizare repository local](#actualizare-repository-local)
+   1. [Sincronizarea repository-ului local cu cel remote](#sincronizarea-repository-ului-local-cu-cel-remote)
+   1. [Sincronizarea repository-ului remote între branch-uri](#sincronizarea-repository-ului-remote-între-branch-uri)
+   1. [Actualizarea repository-ului local](#actualizarea-repository-ului-local)
 1. [Testarea aplicației cu Jenkins](#testarea-aplicației-cu-jenkins)
     1. [Descriere Jenkins](#descriere-jenkins)
-    1. [Vizualizare pipeline cu Blue Ocean](#vizualizare-pipeline-cu-blue-ocean)
+    1. [Vizualizarea pipeline-ului cu Blue Ocean](#vizualizarea-pipeline-ului-cu-blue-ocean)
     1. [Crearea unui container Docker în etapa de Deploy](#crearea-unui-container-docker-în-etapa-de-Deploy)
 
 # Introducere
@@ -41,7 +41,7 @@ Am verificat. Mașina virtuală este funcțională.
 
 # Configurarea mediului de lucru
 
-# Instalare headere necesare pentru Linux
+# Instalarea header-elor necesare pentru Linux
 
 După ce am finalizat etapa de funcționare a mașinii virtuale trebuie să ne asigurăm că avem toate tool-urile necesare în proiect. Pentru început deschidem un terminal în mașina virtuală pentru a instala header-ele necesare pentru Linux. Acestea sunt esențiale pentru a asigura compatibilitatea și funcționarea corectă a sistemului de operare.
 
@@ -161,7 +161,7 @@ Pentru a actualiza sistemul cu noile pachete instalate vom utiliza comanda:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Tools/Screenshot%20from%202024-05-20%2015-34-14.png)
 
-# Clonare repository GitHub
+# Clonarea repository-ului GitHub
 
 Pentru a avea acces la modificarea fisierelor necesare utilizării aplicației în mediul local trebuie să clonăm repository-ul de pe Github. Se copiază link-ul din imaginea de mai jos:
 
@@ -209,9 +209,9 @@ Modul de utilizare al parametrilor "culoare" și "descriere" este ilustrat în i
 
 Scriptul din imagine este util în realizarea importului bibliotecii fructe în fișierul 443_fructe.py.
 
-# Rularea aplicației
+# Aplicația
 
-# Rularea aplicației local
+# Rularea aplicației cu Flask
 Pentru a rula aplicația local sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
 * export FLASK_APP=443_fructe
 * flask --app 443_fructe.py> --debug run
@@ -292,13 +292,13 @@ Comenzile care au fost utilizate sunt:
 * git commit
 * git push
 
-# Sincronizare repository local cu cel remote
+# Sincronizarea repository-ului local cu cel remote
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-16-04.png)
 
 După cum se observă, modificările din repository-ul local au fost aduse pe Github.
 
-# Sincronizare repository remote între branch-uri
+# Sincronizarea repository-ului remote între branch-uri
 
 Pentru a sincroniza branch-urile main_Rinciog_Florin și devel_Rinciog_Florin se urmărește modalitatea de mai jos:
 
@@ -310,7 +310,7 @@ Pentru a sincroniza branch-urile main_Rinciog_Florin și devel_Rinciog_Florin se
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_git/Screenshot%20from%202024-05-16%2013-21-44.png)
 
-# Actualizare repository local
+# Actualizarea repository-ului local
 
 Pentru a sincroniza acum repository-ul local cu cel remote de pe branch-ul main_Rinciog_Florin vom executa în terminal următoarele comenzi:
 * git checkout main_Rinciog_Florin
@@ -339,7 +339,7 @@ Care sunt avantajele utilizării Jenkins?
 * scalabilitate: poate fi extins cu ajutorul plugin-urilor pentru a îndeplini cerințe specifice proiectului.
 * monitorizare și raportare: oferă vizibilitate completă asupra stării proiectelor prin rapoarte detaliate și notificări în timp real.
 
-# Vizualizare pipeline cu Blue Ocean
+# Vizualizarea pipeline-ului cu Blue Ocean
 
 Mai jos este ilustrat un pipeline care a trecut testul cu Jenkins.
 
