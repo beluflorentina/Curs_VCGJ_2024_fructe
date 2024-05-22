@@ -18,7 +18,7 @@
    1. [Rularea aplicației cu Docker](#rularea-aplicației-cu-docker)
 1. [Încărcarea aplicației pe GitHub](#încărcarea-aplicației-pe-github)
    1. [Sincronizarea repository-ului local cu cel remote](#sincronizarea-repository-ului-local-cu-cel-remote)
-   1. [Sincronizarea repository remote între branch-uri](#sincronizarea-repository-ului-remote-între-branch-uri)
+   1. [Sincronizarea repository-ului remote între branch-uri](#sincronizarea-repository-ului-remote-între-branch-uri)
    1. [Actualizarea repository-ului local](#actualizarea-repository-ului-local)
 1. [Testarea aplicației cu Jenkins](#testarea-aplicației-cu-jenkins)
     1. [Descriere Jenkins](#descriere-jenkins)
