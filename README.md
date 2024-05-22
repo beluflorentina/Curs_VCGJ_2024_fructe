@@ -130,7 +130,7 @@ Pentru a rula Jenkins introducem în terminal comanda din imagine:
 
 ![image](https://github.com/buzzer0996/Curs_VCGJ_2024_fructe/blob/main/app/img/Implementare_aplicatie_in_jenkins/Screenshot%20from%202024-05-16%2013-33-19.png)
 
-După cum se poate observa din imagine Jenkins rulează ca aplicație și nu ca server. Pentru a face ca Jenkins să ruleze doar din comanda "jenkins", după instalare trebuie să oprim și să dezactivăm serviciul din comenzile de mai jos:
+După cum se poate observa din imagine Jenkins rulează din terminal și nu ca serviciu. Pentru a face ca Jenkins să ruleze din comanda "jenkins", după instalare trebuie să oprim și să dezactivăm serviciul din comenzile de mai jos:
 * sudo systemctl stop jenkins
 * sudo systemctl disable jenkins
 
@@ -214,7 +214,7 @@ Scriptul din imagine este util în realizarea importului bibliotecii fructe în 
 # Aplicația
 
 # Rularea aplicației cu Flask
-Pentru a rula aplicația local sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
+Pentru a rula aplicația cu Flask sunt necesare următoarele condiții: activarea mediului virtual care ne va ajuta să rulăm aplicația fără erori și utilizarea comenzilor de mai jos, în ordinea în care sunt scrise:
 * export FLASK_APP=443_fructe
 * flask --app 443_fructe.py> --debug run
 
