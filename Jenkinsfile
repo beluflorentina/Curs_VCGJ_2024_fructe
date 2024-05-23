@@ -31,8 +31,8 @@ pipeline {
                         . .venv/bin/activate
 		    fi
 		    
-                    pylint --exit-zero lib/*.py
-                    pylint --exit-zero tests/*.py
+                    pylint --exit-zero app/lib/*.py
+                    pylint --exit-zero app/test/*.py
                     pylint --exit-zero sysinfo.py
                 '''
             }
