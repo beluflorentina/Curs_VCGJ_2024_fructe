@@ -32,8 +32,8 @@ pipeline {
 		    fi
 		    
                     pylint --exit-zero lib/*.py
-                    pylint --exit-zero tests/*.py
-                    pylint --exit-zero sysinfo.py
+                    pylint --exit-zero test/*.py
+                    pylint --exit-zero ../fructe.py
                 '''
             }
         }
@@ -43,7 +43,8 @@ pipeline {
             	echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate
-                    pytest
+                    cd app
+                    python3 -m pytest -v
                 '''
             }
         }
@@ -51,8 +52,15 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo "Build ID: ${BUILD_NUMBER}"
+                echo "Creare imagine docker"
+                sh '''
+                    docker build -t fructe:v${BUILD_NUMBER} .
+                    docker create --name fructe${BUILD_NUMBER} -p 8020:5011 fructe:v${BUILD_NUMBER}
+                '''
             }
         }
+    }
+}
     }
 }
