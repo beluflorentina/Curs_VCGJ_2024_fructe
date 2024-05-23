@@ -9,6 +9,7 @@ def index():
     ret = "<h1>Fructe</h1>"
     
     ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
+    ret += f"<a href={url_for('view_smochina')}>Smochina - Oprea Livia</a> <br/>"
 
     return ret
 
@@ -86,7 +87,7 @@ def view_smochina():
 
 @app.route('/smochina/culoare', methods=['GET'])
 def view_culoare_smochina():
-    culoare = culoare_acai()  
+    culoare = culoare_smochina()  
     
     ret = "<h1>Culoarea smochina:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
