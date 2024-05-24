@@ -14,7 +14,7 @@
 
 Aplicatia afiseaza informatii despre fructe intr-o pagina web. A fost testata pe Ubuntu 22.04.
 Componenta WEB a aplicatiei se bazeaza pe framework-ul `Flask`.
-Aplicatia este simpla, afiseaza informatii despre descrierea si culoarea fructului cu ajutoru functiilor culoare_acai() si descriere_acai().
+Aplicatia este simpla, afiseaza informatii despre descrierea si culoarea fructului cu ajutoru functiilor culoare_pruna() si descriere_pruna().
 Informatiile sunt preluate apoi in functiile de tip `view` specifice fiecarei pagini si returnate clientului WEB care apeleaza serverul.
 
 Pentru o navigare mai usoara in browser, fiecare pagina contine link-uri catre celelalte pagini.
@@ -22,9 +22,9 @@ Pentru o navigare mai usoara in browser, fiecare pagina contine link-uri catre c
 Rutele pentru pagini sunt:
  * ruta standard '/' - URL: http://127.0.0.1:5000
  * rute in aplicatia WEB pentru:
-   * fruct:     '/acai' - URL: 'http://127.0.0.1:5000/acai',
-   * culoare:   '/culoare' -                        .../acai/culoare
-   * descriere: '/descriere' -                      .../acai/descriere
+   * fruct:     '/pruna' - URL: 'http://127.0.0.1:5000/pruna',
+   * culoare:   '/culoare' -                        .../pruna/culoare
+   * descriere: '/descriere' -                      .../pruna/descriere
 
 Aplicatia include suport pentru containerizare in fisierul `Dockerfile` din directorul principal al aplicatiei.
 
@@ -49,7 +49,7 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    sudo apt install git
 
    cd Curs_VCGJ_2024_fructe
-   git checkout devel_Belu_Florentina
+   git checkout devel_Busicescu_Mihai
    
    # Creare mediu virtual si activare
    python3 -m venv .venv
@@ -69,11 +69,6 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    docker build -t imagine-aplicatie
    docker run -p 8080:500 --name container-aplicatie imagine-aplicatie
    
-   # Incarcare imagine pe Docker Hub
-   docker login
-   docker tag imagine-aplicatie beluflorentina/imagine_aplicatie:latest
-   docker push beluflorentina/imagine_aplicatie:latest
-   
    # Testare
    cd app/test
    pytest .
@@ -81,7 +76,7 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    # Staging, inregistrare modificari si sincronizare local cu remote
    git add
    git commit -m "versiunea 1"
-   git push origin devel_Belu_Florentina
+   git push origin devel_Busicescu_Mihai
    
    # Oferire drepturi Jenkins
    sudo groupadd docker
