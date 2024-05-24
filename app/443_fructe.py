@@ -8,6 +8,8 @@ app = Flask(__name__)
 def index():
     ret = "<h1>Fructe</h1>"
     
+    ret += f"<a href={url_for('view_cirese')}>Cirese - Constantin Mara</a> <br/>"
+    
     ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
 
     return ret
