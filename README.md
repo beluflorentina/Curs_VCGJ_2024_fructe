@@ -12,7 +12,7 @@
 
 # Descriere aplicatie
 
-Aplicatia afiseaza informatii despre fructe intr-o pagina web. A fost testata pe Ubuntu 22.04.
+Aplicatia 443_fructe afiseaza informatii despre fructe intr-o pagina web. A fost testata pe Ubuntu 22.04.
 Componenta WEB a aplicatiei se bazeaza pe framework-ul `Flask`.
 Aplicatia este simpla, afiseaza informatii despre descrierea si culoarea fructului cu ajutorul functiilor culoare_guava() si descriere_guava().
 Informatiile sunt preluate apoi in functiile de tip `view` specifice fiecarei pagini si returnate clientului WEB care apeleaza serverul.
@@ -23,8 +23,8 @@ Rutele pentru pagini sunt:
  * ruta standard '/' - URL: http://127.0.0.1:5000
  * rute in aplicatia WEB pentru:
    * fruct:     '/guava' - URL: 'http://127.0.0.1:5000/guava',
-   * culoare:   '/culoare' -                        .../guava/culoare
-   * descriere: '/descriere' -                      .../guava/descriere
+   * culoare:   '/culoare' - URL 'http://127.0.0.1:5000/guava/culoare'
+   * descriere: '/descriere' -bURL 'http://127.0.0.1:5000/guava/descriere'
 
 Aplicatia include suport pentru containerizare in fisierul `Dockerfile` din directorul principal al aplicatiei.
 
@@ -60,7 +60,7 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    pip install pytest
    pip install pylint
    
-   # Rulare aplicatie // Creare componenta web aplicatie pe baza fremework-ului flask
+   # Rulare aplicatie // Creare componenta web aplicatie pe baza fremework-ului flask, functioneaza doar dupa activare venv
    flask --app 443_fructe.py run --debug
 
    # Creare si rulare container
@@ -118,3 +118,7 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 - CI = Continuous Integration
 
 Pipeline-ul Jenkins automatizeaza procesyl de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
+
+# EXEMPLE pagina web 
+## Pagina principala
+![image](eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY1NTU3NjcsIm5iZiI6MTcxNjU1NTQ2NywicGF0aCI6Ii8xNDIyMTAwNDYvMzMzNTk0NTYxLTBhMzI1NGRkLWU5ZmUtNDUyNS1iZmE4LTA2NjEyZjJiNzM4Ny5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyNFQxMjU3NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YmQyYzllMzVmNjNlMWU0ODgxYThiNGQzZjFiZWUxYjk2NjAxZTEyOWY3Y2NkYjBiODE2Y2M2YTgyNmJkZTU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9)
