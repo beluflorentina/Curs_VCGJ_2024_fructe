@@ -7,8 +7,6 @@ sys.path.append("../")
 
 import lib.biblioteca_fructe as fructe
 
-
-
 def test_culoare_acai():
     culoare = fructe.culoare_acai()
 
@@ -27,4 +25,25 @@ def test_descriere_acai():
         assert True
     else:
         logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
-        assert False 
+        assert False
+
+def test_culoare_pitaya():
+    culoare = fructe.culoare_pitaya()
+
+    if "vibrantă de roz sau galben" in culoare:
+        logger.info(f"Functia culoare_pitaya functioneaza corect: {culoare}")
+        assert True
+    else:
+        logger.error(f"Functia culoare_pitaya NU functioneaza corect: {culoare}")
+        assert False
+
+def test_descriere_pitaya():
+    descriere = fructe.descriere_pitaya()
+
+    if "Pitaya, cunoscută și ca fructul dragonului" in descriere:
+        logger.info(f"Functia descriere_pitaya functioneaza corect:\n{descriere}")
+        assert True
+    else:
+        logger.error(f"Functia descriere_pitaya NU functioneaza corect:\n{descriere}")
+        assert False
+
