@@ -10,11 +10,8 @@ WORKDIR /app
 
 COPY . /app
 
-
-ENV FLASK_APP ./app/443_fructe.py
+ENV FLASK_APP ./fructe.py
 
 EXPOSE 5000
 
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
-
-

@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            	echo 'Building...'
+                echo 'Building...'
                 sh '''
                     pwd;
                     ls -l;
@@ -19,18 +19,17 @@ pipeline {
         
         stage('pylint - calitate cod') {
             steps {
-            	echo 'Pylint...'
+                echo 'Pylint...'
                 sh '''
                     . .venv/bin/activate
-                    if [ $? -eq 0 ]
-		    then
-    		    	echo "SUCCESS: venv was activated."
-		    else
-    		    	echo "FAIL: cannot activate venv"
-    		    	python3 -m venv .venv
+                    if [ $? -eq 0 ]; then
+                        echo "SUCCESS: venv was activated."
+                    else
+                        echo "FAIL: cannot activate venv"
+                        python3 -m venv .venv
                         . .venv/bin/activate
-		    fi
-		    
+                    fi
+                    
                     pylint --exit-zero lib/*.py
                     pylint --exit-zero tests/*.py
                     pylint --exit-zero sysinfo.py
@@ -40,14 +39,13 @@ pipeline {
         
         stage('Unit Testing') {
             steps {
-            	echo 'Unit testing with Pytest...'
+                echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate
                     pytest
                 '''
             }
         }
-        
         
         stage('Deploy') {
             steps {
