@@ -20,7 +20,7 @@ def view_cirese():
 	culoare = culoare_cirese()
 	descriere = descriere_cirese() 
 	
-	ret = "<h1>Cirese</h1>"
+	ret = "<h1>Fruct Cirese</h1>"
 	
 	#Linkuri
 	ret += f"<a href={url_for('index')}>[fructe]</a> | "
