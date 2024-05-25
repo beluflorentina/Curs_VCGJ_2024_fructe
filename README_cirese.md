@@ -10,7 +10,7 @@
 
 # Descriere aplicatie
 
-Aceasta aplicatie afiseaza informatii despre diverse fructe. Pe acest branch, sunt implementate functii care returneaza descrierea si culoare fructului de cirese si fructului de acai.
+Aceasta aplicatie afiseaza informatii despre diverse fructe. Pe acest branch, sunt implementate functii care returneaza descrierea si culoare fructului de cires si fructului de acai.
 Poate fi executata atat pe Linux cat si pe Windows. A fost dezvoltata si testata pe Ubuntu 22.04 dar functioneaza si pe Windows 11. Totusi, pentru Windows 11 inca nu se ofera suport si va trebui sa va configurati pe cont propriu environment-ul.
 
 Componenta WEB a aplicatiei se bazeaza pe framework-ul `Flask`.
