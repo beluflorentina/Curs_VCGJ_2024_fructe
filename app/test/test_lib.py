@@ -9,22 +9,22 @@ import lib.biblioteca_fructe as fructe
 
 
 
-def test_culoare_acai():
-    culoare = fructe.culoare_acai()
+def test_culoare_durian():
+    culoare = fructe.culoare_durian()
 
-    if "rich purple color" in culoare:
-        logger.info(f"Functia culoare_acai functioneaza corect: {culoare}")
+    if "also be red or green" in culoare:
+        logger.info(f"Functia culoare_durian functioneaza corect: {culoare}")
         assert True
     else:
-        logger.error(f"Functia culoare_acai NU functioneaza corect: {culoare}")
+        logger.error(f"Functia culoare_durian NU functioneaza corect: {culoare}")
         assert False
 
-def test_descriere_acai():
-    descriere = fructe.descriere_acai()
+def test_descriere_durian():
+    descriere = fructe.descriere_durian()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
-        logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
+    if "Durian grows in tropical" in descriere:
+        logger.info(f"Functia descriere_durian functioneaza corect:\n{descriere}")
         assert True
     else:
-        logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
+        logger.error(f"Functia descriere_durian NU functioneaza corect:\n{descriere}")
         assert False 
