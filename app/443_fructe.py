@@ -9,6 +9,8 @@ def index():
     ret = "<h1>Fructe</h1>"
     
     ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
+    
+    ret += f"<a href={url_for('view_rodie')}>Rodie - Livadaru Teodor</a> <br/>" 
 
     return ret
 
@@ -56,6 +58,53 @@ def view_descriere_acai():
     ret = "<h1>Descriere acai:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
     ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
+    ret += descriere
+    
+    return ret
+    
+    
+@app.route('/rodie', methods=['GET'])
+def view_rodie():
+	culoare = culoare_rodie()
+	descriere = descriere_rodie() 
+	
+	ret = "<h1>Rodia</h1>"
+	
+	#Linkuri
+	ret += f"<a href={url_for('index')}>[fructe]</a> | "
+	ret += f"<a href={url_for('view_culoare_rodie')}>[culoare]</a> | "
+	ret += f"<a href={url_for('view_descriere_rodie')}>[descriere]</a>"
+	
+	ret += "<h2>Descriere: </h2>"
+	
+	ret += descriere 
+	
+	ret += "<h2>Culoare: </h2>"
+	ret += culoare
+	
+	
+	
+	return ret
+
+
+@app.route('/rodie/culoare', methods=['GET'])
+def view_culoare_rodie():
+    culoare = culoare_rodie()  
+    
+    ret = "<h1>Culoarea rodiei:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_rodie')}>[rodie]</a> <br/> <br/>"
+    ret += culoare
+    
+    return ret
+
+@app.route('/rodie/descriere', methods=['GET'])
+def view_descriere_rodie():
+    descriere = descriere_rodie()  
+    
+    ret = "<h1>Descriere rodie:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_rodie')}>[rodie]</a> <br/> <br/>"
     ret += descriere
     
     return ret
