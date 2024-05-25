@@ -21,7 +21,7 @@ def view_papaya():
 	culoare = culoare_papaya()
 	descriere = descriere_papaya() 
 	
-	ret = "<h1>Papaya</h1>"
+	ret = "<h1> fruct Papaya</h1>"
 	
 	#Linkuri
 	ret += f"<a href={url_for('index')}>[fructe]</a> | "
