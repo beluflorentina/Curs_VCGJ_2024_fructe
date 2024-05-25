@@ -27,8 +27,8 @@ Aplicatia include suport pentru containerizare in fisierul `Dockerfile` din dire
    * culoare acai:         '/acai/culoare' -         .../acai/culoare
    * descriere acai:       '/acai/descriere' -       .../acai/descriere
    * fruct cireasa:        '/cirese' - URL: 'http://127.0.0.1:5000/cirese',
-   * culoare cireasa:      '/cirese/culoare' -         .../acai/culoare
-   * descriere cireasa:    '/cirese/descriere' -       .../acai/descriere
+   * culoare cireasa:      '/cirese/culoare' -         .../cirese/culoare
+   * descriere cireasa:    '/cirese/descriere' -       .../cirese/descriere
 
 # Setup si rulare aplicatie
 
