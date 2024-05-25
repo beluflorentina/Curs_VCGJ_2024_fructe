@@ -10,7 +10,6 @@ WORKDIR /app
 
 COPY . /app
 
-
 ENV FLASK_APP ./fructe.py
 
 EXPOSE 5000
