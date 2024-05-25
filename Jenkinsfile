@@ -52,11 +52,11 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                echo "Build ID: ${BUILD_NUMBER+1}"
+                echo "Build ID: ${BUILD_NUMBER}"
                 echo "Creare imagine docker"
                 sh '''
-                    docker build -t fructe:v${BUILD_NUMBER +1} .
-                    docker create --name fructe${BUILD_NUMBER+1} -p 8020:5011 fructe:v${BUILD_NUMBER+1}
+                    docker build -t fructe:v${BUILD_NUMBER } .
+                    docker create --name fructee${BUILD_NUMBER} -p 8020:5011 fructee:v${BUILD_NUMBER}
                 '''
             }
         }
