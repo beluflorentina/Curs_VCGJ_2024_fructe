@@ -1,57 +1,72 @@
 pipeline {
     agent any
     
+    environment {
+        FLASK_ENV = 'development'
+        FLASK_APP = './app/443_fructe.py'
+    }
+
     stages {
-        stage('Build') {
+        stage('Preparation') {
             steps {
-            	echo 'Building...'
-                sh '''
-                    pwd;
-                    ls -l;
-                    python3 -m venv .venv
-                    . .venv/bin/activate
-                    pip install flask
-                    pip install pylint
-                    pip install pytest
-                '''
+                script {
+                    echo 'Preparing environment...'
+                    sh '''
+                        python3 -m venv .venv
+                        . .venv/bin/activate
+                        pip install --upgrade pip
+                        pip install -r requirements.txt
+                    '''
+                }
             }
         }
         
-        stage('pylint - calitate cod') {
+        stage('Lint') {
             steps {
-            	echo 'Pylint...'
-                sh '''
-                    . .venv/bin/activate
-                    if [ $? -eq 0 ]
-		    then
-    		    	echo "SUCCESS: venv was activated."
-		    else
-    		    	echo "FAIL: cannot activate venv"
-    		    	python3 -m venv .venv
+                script {
+                    echo 'Running Pylint...'
+                    sh '''
                         . .venv/bin/activate
-		    fi
-		    
-                    pylint --exit-zero lib/*.py
-                    pylint --exit-zero tests/*.py
-                    pylint --exit-zero sysinfo.py
-                '''
+                        pylint --exit-zero app/lib/*.py
+                        pylint --exit-zero app/test/*.py
+                        pylint --exit-zero app/443_fructe.py
+                    '''
+                }
             }
         }
         
         stage('Unit Testing') {
             steps {
-            	echo 'Unit testing with Pytest...'
-                sh '''
-                    . .venv/bin/activate
-                    pytest
-                '''
+                script {
+                    echo 'Running Unit Tests...'
+                    sh '''
+                        . .venv/bin/activate
+                        echo "Virtual environment activated."
+                        echo "sys.path: $(python -c 'import sys; print(sys.path)')"
+                        echo "Current working directory: $(pwd)"
+                        pytest -v
+                    '''
+                }
             }
         }
         
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    echo 'Building Docker Image...'
+                    sh '''
+                        docker build -t my-flask-app .
+                    '''
+                }
+            }
+        }
         
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                script {
+                    echo 'Deploying Application...'
+                    
+                }
             }
         }
     }
