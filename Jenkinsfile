@@ -31,6 +31,7 @@ pipeline {
                         . .venv/bin/activate
 		    fi
 		    
+		    cd app
                     pylint --exit-zero lib/*.py
                     pylint --exit-zero test/*.py
                     pylint --exit-zero ../443_fructe.py
@@ -56,6 +57,9 @@ pipeline {
                 echo "Creare imagine docker"
                 sh '''
                     docker build -t fructe:v${BUILD_NUMBER} .
+                    if docker ps -a --format '{{.Names}}' | grep -Eq "^fructe${BUILD_NUMBER}\$"; then
+                        docker rm -f fructe${BUILD_NUMBER}
+                    fi
                     docker create --name fructe${BUILD_NUMBER} -p 8020:5011 fructe:v${BUILD_NUMBER}
                 '''
             }
