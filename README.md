@@ -125,6 +125,11 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 ![imagine1](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/ebf4cbf3-058b-4acb-8b10-98f47bfea079)
 
 
+![DESCRIERE_BANANA](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/c6ce0d87-782e-42cc-a169-dfe2a26e5bd1)
+
+![CULOARE_BANANA](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/211102ea-98f0-4859-9e3c-1e8f859fee12)
+
+
 
 
 
