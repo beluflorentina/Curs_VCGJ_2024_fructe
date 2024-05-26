@@ -9,6 +9,7 @@ def index():
     ret = "<h1>Fructe</h1>"
     
     ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
+    ret += f"<a href={url_for('view_smochina')}>Smochina - Oprea Livia</a> <br/>"
 
     return ret
 
@@ -56,6 +57,52 @@ def view_descriere_acai():
     ret = "<h1>Descriere acai:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
     ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
+    ret += descriere
+    
+    return ret
+    
+#_____________________________________________________________________________    
+
+@app.route('/smochina', methods=['GET'])
+def view_smochina():
+	culoare = culoare_smochina()
+	descriere = descriere_smochina() 
+	
+	ret = "<h1>smochina</h1>"
+	
+	#Linkuri
+	ret += f"<a href={url_for('index')}>[fructe]</a> | "
+	ret += f"<a href={url_for('view_culoare_smochina')}>[culoare]</a> | "
+	ret += f"<a href={url_for('view_descriere_smochina')}>[descriere]</a>"
+	
+	ret += "<h2>Descriere: </h2>"
+	
+	ret += descriere 
+	
+	ret += "<h2>Culoare: </h2>"
+	ret += culoare
+	
+	return ret
+
+
+@app.route('/smochina/culoare', methods=['GET'])
+def view_culoare_smochina():
+    culoare = culoare_smochina()  
+    
+    ret = "<h1>Culoarea smochina:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_smochina')}>[smochina]</a> <br/> <br/>"
+    ret += culoare
+    
+    return ret
+
+@app.route('/smochina/descriere', methods=['GET'])
+def view_descriere_smochina():
+    descriere = descriere_smochina()  
+    
+    ret = "<h1>Descriere smochina:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_smochina')}>[smochina]</a> <br/> <br/>"
     ret += descriere
     
     return ret
