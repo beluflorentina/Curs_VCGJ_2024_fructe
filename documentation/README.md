@@ -79,11 +79,12 @@ Rularea aplicatiei se face cu:
 > python3 app/443_fructe.py // ruleaza aplicatia cu modul de debug off
 
 Pe 'local' am creat directorul pe care urmeaza sa il gestionam cu Git > mkdir scc > cd scc
-In directorul numit 'scc' am clonat apoi repository-ul de pe 'remote' > git clone https://github.com/beluflorentina/Curs_VCGJ_2024_fructe.git // clonare repository proiect sablon > cd Curs_VCGJ_2024_fructe/ > git status // verific starea repository-ului obtinand informatii ca cele de mai jos
-On branch main
-Your branch is up to date with 'origin/main'.
+In directorul numit 'scc' am clonat apoi repository-ul de pe 'remote'
 
-        nothing to commit, working tree clean
+> git clone https://github.com/beluflorentina/Curs_VCGJ_2024_fructe.git // clonare repository proiect sablon
+> cd Curs_VCGJ_2024_fructe/
+> git status // verific starea repository-ului obtinand informatii ca cele de mai jos
+
     > git branch -a                                                                 // vad toate branch-urile atat remote cat si local, cele create de Flori
     > git checkout -b remotes/origin/devel_Crisan_Bogdan                            // m-am mutat pe branch-ul meu de dev creat in remote Flori
     > git diff --staged                                                             // vad ce linii de cod au fost inainte si ce linii au fost adaugate in staged
@@ -97,3 +98,6 @@ Dupa ce am modificat liniile de cod din 'biblioteca_fructe.py' si din 'test_lib.
 > git status
 > cd app
 > python3 443_fructe.py // ruleaza aplicatia
+
+Putem observa mai jos un pull request merged in origin devel_Crisan_Bogdan to main_Crisan_Bogdan
+documentation/images/readme_1.png
