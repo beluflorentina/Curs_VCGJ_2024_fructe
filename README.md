@@ -6,13 +6,13 @@
 # Cuprins
 1. [Descriere aplicatie](#descriere-aplicatie)
 1. [Configurare](#configurare)
-1. [Vizualiare aplicatie](#vizualizare aplicatie)
+1. [Vizualiare aplicatie](#vizualizare-aplicatie)
 1. [Verificare](#verificare)
    1. [Teste manuale](#teste-manuale)
    1. [Teste Jenkins](#teste-jenkins)
    1. [Teste pylint](#teste-pylint)
 1. [Containerizare](#containerizare)
-1. [DevOps CI](#devops_ci)
+1. [DevOps CI](#devops-ci)
 1. [Bibliografie](#bibliografie)
 
 # Descriere aplicatie
@@ -62,8 +62,8 @@ Rutele pentru pagini sunt:
 	
 	# Creare si rulare container
 	cd..
-	sudo docker build -t imagine-aplicatie
-	docker run -p 8080:5000 --name container_app_fructe imagine-aplicatie
+	sudo docker build -t imagine-aplicatie .
+	docker run -p 8080:5000 --name container_app_fructe imagine-aplicatie 
 	
 	# Testare manuala:
 	cd app/test
@@ -148,7 +148,7 @@ Rulare container:
 
 ![Aplicatie_container](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/127586039/ea193391-6dee-454a-b3d3-5af6babf1e8e)
 
-#DevOps CI
+# DevOps CI
 [cuprins](#cuprins)
 CI=continuous integration
 Pipeline-ul Jenkins automatizeaza procesul de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care ne defineste pipeline-ul Jenkins.
