@@ -5,26 +5,23 @@ logger = logging.getLogger(__name__)
 import sys
 sys.path.append("../")
 
-import lib.biblioteca_fructe as fructe
+from app.lib.biblioteca_fructe import *
 
 
 
-def test_culoare_acai():
-    culoare = fructe.culoare_acai()
+def test_apple_color():
+    color = apple_color()
+    assert "red" in color
+    assert "green" in color
+    assert "yellow" in color
 
-    if "rich purple color" in culoare:
-        logger.info(f"Functia culoare_acai functioneaza corect: {culoare}")
-        assert True
-    else:
-        logger.error(f"Functia culoare_acai NU functioneaza corect: {culoare}")
-        assert False
 
-def test_descriere_acai():
-    descriere = fructe.descriere_acai()
+def test_apple_description():
+    description = apple_description()
+    assert "round, edible" in description
+    assert "fruit" in description
+    assert "taste" in description
+    assert "pie" in description
+    assert "juice" in description
+    assert "cider" in description
 
-    if "scientifically known as Euterpe oleracea" in descriere:
-        logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
-        assert True
-    else:
-        logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
-        assert False 
