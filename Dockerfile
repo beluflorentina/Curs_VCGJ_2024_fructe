@@ -6,11 +6,11 @@ RUN pip install flask
 
 RUN pip install pytest
 
-WORKDIR /app
+WORKDIR /Curs_VCGJ_2024_fructe
 
-COPY . /app
+COPY . /Curs_VCGJ_2024_fructe
 
-ENV FLASK_APP ./fructe.py
+ENV FLASK_APP ./443_fructe.py
 
 EXPOSE 5000
 

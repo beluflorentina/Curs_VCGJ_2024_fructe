@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+            	echo 'Building...'
                 sh '''
                     pwd;
                     ls -l;
@@ -19,39 +19,50 @@ pipeline {
         
         stage('pylint - calitate cod') {
             steps {
-                echo 'Pylint...'
+            	echo 'Pylint...'
                 sh '''
                     . .venv/bin/activate
-                    if [ $? -eq 0 ]; then
-                        echo "SUCCESS: venv was activated."
-                    else
-                        echo "FAIL: cannot activate venv"
-                        python3 -m venv .venv
+                    if [ $? -eq 0 ]
+		    then
+    		    	echo "SUCCESS: venv was activated."
+		    else
+    		    	echo "FAIL: cannot activate venv"
+    		    	python3 -m venv .venv
                         . .venv/bin/activate
-                    fi
-                    
+		    fi
+		    
+		    cd app
                     pylint --exit-zero lib/*.py
-                    pylint --exit-zero tests/*.py
-                    pylint --exit-zero sysinfo.py
+                    pylint --exit-zero test/*.py
+                    pylint --exit-zero ../443_fructe.py
                 '''
             }
         }
         
         stage('Unit Testing') {
             steps {
-                echo 'Unit testing with Pytest...'
+            	echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate
-                    pytest
+                    cd app
+                    python3 -m pytest -v
                 '''
             }
         }
         
+        
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo "Build ID: ${BUILD_NUMBER}"
+                echo "Creare imagine docker"
+                sh '''
+                    docker build -t fructe:v${BUILD_NUMBER} .
+                    if docker ps -a --format '{{.Names}}' | grep -Eq "^fructe${BUILD_NUMBER}\$"; then
+                        docker rm -f fructe${BUILD_NUMBER}
+                    fi
+                    docker create --name fructe${BUILD_NUMBER} -p 8020:5011 fructe:v${BUILD_NUMBER}
+                '''
             }
         }
     }
 }
-
