@@ -23,7 +23,7 @@
 
  * ruta standard '/' - URL: http://127.0.0.1:5000
  * rute in aplicatia WEB pentru:
-   * smochina:http://127.0.0.1:5000/rodie
+   * rodie:http://127.0.0.1:5000/rodie
    * descriere:http://127.0.0.1:5000/rodie/descriere
    * culoare:http://127.0.0.1:5000/rodie/culoare
 
