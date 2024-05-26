@@ -94,8 +94,10 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    # Rulare Jenkins
    jenkins
    # Accesare server Jenkins din browser la 127.0.0.1:8080
-   
+
 ```
+# RULARE APLICATIE
+![rulare](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/878c8cf7-c64b-4f85-9479-08824f069dc0)
 
 
 # Testare cu pytest
