@@ -79,6 +79,8 @@ Testare
     > cd ..
     > pylint 443_fructe.py
 
+![pytest](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/blob/devel_Crisan_Bogdan/documentation/images/pytest_commanline.png)
+
 Pentru testarea cu Jenkins este necesar sa dam drepturi:
 
     > sudo groupadd docker                                                          //creeaza grup nou numit 'docker'
@@ -87,6 +89,13 @@ Pentru testarea cu Jenkins este necesar sa dam drepturi:
 
 Codul ce defineste pipeline-ul Jenkins se afla in Jenkinsfile dupa cum se poate vedea in poza de mai jos
 ![jenkinsfile](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/blob/devel_Crisan_Bogdan/documentation/images/jenkinsfile.png)
+
+Testarea cu Jenkins a decurs astfel:
+Jenkins
+![Jenkins](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/blob/devel_Crisan_Bogdan/documentation/images/Jenkins_Testare.png)
+
+Blue Ocean
+![BlueOcean](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/blob/devel_Crisan_Bogdan/documentation/images/Blue%20Ocean%20_Jenkins.png)
 
 Rularea aplicatiei se face cu:
 
@@ -119,3 +128,7 @@ Codul ce afiseaza web paginile si continutul paginilor ce descriu fructul se afl
 
 Putem observa mai jos un pull request merged in origin devel_Crisan_Bogdan to main_Crisan_Bogdan
 ![pull_request](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/blob/main_Crisan_Bogdan/documentation/images/readme_1.png)
+
+Am folosit comanda 'git reset HEAD~1' pentru a da uncommit si apoi am facut push to remote cu 'git push --force': > git reset HEAD~1 > git push --force > git remote show origin
+
+![resetcommit](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/blob/devel_Crisan_Bogdan/documentation/images/git_reset_commit.png)
