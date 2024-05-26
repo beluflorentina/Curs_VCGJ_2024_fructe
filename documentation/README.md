@@ -100,4 +100,4 @@ Dupa ce am modificat liniile de cod din 'biblioteca_fructe.py' si din 'test_lib.
 > python3 443_fructe.py // ruleaza aplicatia
 
 Putem observa mai jos un pull request merged in origin devel_Crisan_Bogdan to main_Crisan_Bogdan
-documentation/images/readme_1.png
+![documentation/images/readme_1.png]
