@@ -85,6 +85,7 @@ Se cloneaza repository-ul folosind comanda ```git clone```
 ```git clone https://github.com/beluflorentina/Curs_VCGJ_2024_fructe.git```
 
 Se acceseaza folder-ul cu proiectul si se activeaza venv folosind comanda ```source```
+
 ```source .venv/bin/activate```
 
 # Rulare aplicatie
