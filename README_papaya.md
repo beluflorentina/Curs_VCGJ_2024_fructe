@@ -105,6 +105,7 @@ In directorul principal al aplicatiei, unde se afla Dockerfile-ul, se ruleaza co
 ![docker1](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/141660299/f135ea3a-b3b9-455a-b85a-f35f06a2484c)
 
 ```docker run -dp 127.0.0.1:5000:5000 <nume_pentru_container>```
+
 Pentru a afisa containerele care ruleaza se poate folosi comanda
 ```sudo docker ps```
 ![docker2](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/141660299/411a230d-e685-497d-80dc-44fc7bd474f9)
