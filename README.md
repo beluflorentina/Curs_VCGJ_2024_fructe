@@ -79,6 +79,7 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
 
    # Vizualizare aplicatie
    
-   ![Screenshot_1](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/145229192/f596efe8-3eec-4f92-8c13-54df7feb367c)
+   ![Screenshot_1](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/145229192/cc3f8491-3599-4f3d-869c-36b43f5ea3cf)
+
 
    
