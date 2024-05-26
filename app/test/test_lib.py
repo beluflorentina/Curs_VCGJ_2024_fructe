@@ -5,7 +5,7 @@ logger = logging.getLogger(__name__)
 import sys
 sys.path.append("../")
 
-import lib.biblioteca_fructe as fructe
+import app.lib.biblioteca_fructe as fructe
 
 
 

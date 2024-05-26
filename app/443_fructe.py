@@ -7,14 +7,13 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def index():
     ret = "<h1>Fructe</h1>"
-    
     ret += f"<a href={url_for('view_caisa')}>Caisa - Funda Gheorghe</a> <br/>"
 
     return ret
 
 
-    
-@app.route('/caisa', methods=['GET'])
+
+@app.route('/caisa',methods=['GET'])
 def view_caisa():
 	culoare = culoare_caisa()
 	descriere = descriere_caisa() 
