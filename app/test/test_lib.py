@@ -9,22 +9,22 @@ import app.lib.biblioteca_fructe as fructe
 
 
 
-def test_culoare_caisa():
-    culoare = fructe.culoare_caisa()
+def test_istorie_caisa():
+    istorie = fructe.istorie_caisa()
 
-    if "rich purple color" in culoare:
-        logger.info(f"Functia culoare_acai functioneaza corect: {culoare}")
+    if "Apricots are propagated by budding" in istorie:
+        logger.info(f"Functia istorie_acai functioneaza corect: {istorie}")
         assert True
     else:
-        logger.error(f"Functia culoare_acai NU functioneaza corect: {culoare}")
+        logger.error(f"Functia istorie_acai NU functioneaza corect: {istorie}")
         assert False
 
 def test_descriere_caisa():
     descriere = fructe.descriere_caisa()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
-        logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
+    if "pricot, (Prunus armeniaca), economically important fruit tree," in descriere:
+        logger.info(f"Functia descriere_caisa functioneaza corect:\n{descriere}")
         assert True
     else:
-        logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
+        logger.error(f"Functia descriere_caisa NU functioneaza corect:\n{descriere}")
         assert False 

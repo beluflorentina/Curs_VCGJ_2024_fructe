@@ -1,5 +1,5 @@
 from flask import Flask, url_for
-from lib.biblioteca_fructe import *
+from app.lib.biblioteca_fructe import *
 
 app = Flask(__name__)
 
@@ -15,36 +15,36 @@ def index():
 
 @app.route('/caisa',methods=['GET'])
 def view_caisa():
-    culoare = culoare_caisa()
+    istorie = istorie_caisa()
     descriere = descriere_caisa()
 
     ret = "<h1>Caisa</h1>"
 
     #Linkuri
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
-    ret += f"<a href={url_for('view_culoare_caisa')}>[culoare]</a> | "
+    ret += f"<a href={url_for('view_istorie_caisa')}>[istorie]</a> | "
     ret += f"<a href={url_for('view_descriere_caisa')}>[descriere]</a>"
 
     ret += "<h2>Descriere: </h2>"
 
     ret += descriere
 
-    ret += "<h2>Culoare: </h2>"
-    ret += culoare
+    ret += "<h2>Istorie: </h2>"
+    ret += istorie
 
 
 
     return ret
 
 
-@app.route('/caisa/culoare', methods=['GET'])
-def view_culoare_caisa():
-    culoare = culoare_caisa()
+@app.route('/caisa/istorie', methods=['GET'])
+def view_istorie_caisa():
+    istorie = istorie_caisa()
 
-    ret = "<h1>Culoarea caisa:</h1>"
+    ret = "<h1>Istorie caisa:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
     ret += f"<a href={url_for('view_caisa')}>[caisa]</a> <br/> <br/>"
-    ret += culoare
+    ret += istorie
 
     return ret
 
