@@ -8,4 +8,4 @@ def culoare_cirese():
     return "Ciresele pot fi de culori diferite, cu nuante de la rosu spre galben pana la negru, depinzand de soiul lor, dar si de anotimpul in care s-au dezvoltat."
     
 def descriere_cirese():
-    return "Ciresele au o formă sferică sau elipsoidală; în mijlocul fructului cărnos se află un sâmbure rotund. Acestea sunt o sursa naturala de vitamine si acizi, benefici corpului uman, avand in acelasi timp un gust dulce, foarte aromat."
+    return "Ciresele au o formă sferică sau elipsoidală; în mijlocul fructului se află un sâmbure rotund. Acestea sunt o sursa naturala de vitamine si acizi, benefici corpului uman, avand in acelasi timp un gust dulce, foarte aromat."
