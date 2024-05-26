@@ -130,9 +130,19 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 ![CULOARE_BANANA](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/211102ea-98f0-4859-9e3c-1e8f859fee12)
 
 
+# Testare Jenkins
+
+![Capture](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/1c641c65-6c24-4b7b-9300-561c0c274603)
+
+![jenkins](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/901fdafb-49c1-42b9-91eb-a9aeda190bb8)
 
 
+# Docker
+![creare_docker](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/347b8227-c868-4d3a-9dec-0cb1f7ec2496)
 
+![viz_docker](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/43720720-840d-4344-965b-8a721820556a)
+
+![run_docker](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/ace97c7a-c8d3-45ef-8cdd-d67bc1272dec)
 
 
 # DevOps CI
