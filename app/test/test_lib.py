@@ -9,22 +9,22 @@ import lib.biblioteca_fructe as fructe
 
 
 
-def test_culoare_acai():
-    culoare = fructe.culoare_acai()
+def test_culoare_pepene():
+    culoare = fructe.culoare_pepene()
 
-    if "rich purple color" in culoare:
-        logger.info(f"Functia culoare_acai functioneaza corect: {culoare}")
+    if "red inside" in culoare:
+        logger.info(f"Functia culoare_pepene functioneaza corect: {culoare}")
         assert True
     else:
-        logger.error(f"Functia culoare_acai NU functioneaza corect: {culoare}")
+        logger.error(f"Functia culoare_pepene NU functioneaza corect: {culoare}")
         assert False
 
-def test_descriere_acai():
-    descriere = fructe.descriere_acai()
+def test_descriere_pepene():
+    descriere = fructe.descriere_pepene()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
-        logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
+    if "Absolutely brilliant on a hot summer" in descriere:
+        logger.info(f"Functia descriere_pepene functioneaza corect:\n{descriere}")
         assert True
     else:
-        logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
+        logger.error(f"Functia descriere_pepene NU functioneaza corect:\n{descriere}")
         assert False 
