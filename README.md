@@ -116,6 +116,9 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 
 # Functionalitate aplicatie
 
+![imagine1](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/ebf4cbf3-058b-4acb-8b10-98f47bfea079)
+
+
 
 
 # DevOps CI
