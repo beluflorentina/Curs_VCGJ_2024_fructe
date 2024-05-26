@@ -9,22 +9,22 @@ import lib.biblioteca_fructe as fructe
 
 
 
-def test_culoare_acai():
-    culoare = fructe.culoare_acai()
+def test_culoare_grapefruit():
+    culoare = fructe.culoare_grapefruit()
 
-    if "rich purple color" in culoare:
-        logger.info(f"Functia culoare_acai functioneaza corect: {culoare}")
+    if "pale yellow to dark pink/red" in culoare:
+        logger.info(f"Functia culoare_grapefruit functioneaza corect: {culoare}")
         assert True
     else:
-        logger.error(f"Functia culoare_acai NU functioneaza corect: {culoare}")
+        logger.error(f"Functia culoare_grapefruit NU functioneaza corect: {culoare}")
         assert False
 
-def test_descriere_acai():
-    descriere = fructe.descriere_acai()
+def test_descriere_grapefruit():
+    descriere = fructe.descriere_grapefruit()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
-        logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
+    if "Grapefruit is a citrus hybrid that originated in Barbados in the 18th century" in descriere:
+        logger.info(f"Functia descriere_grapefruit functioneaza corect:\n{descriere}")
         assert True
     else:
-        logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
+        logger.error(f"Functia descriere_grapefruit NU functioneaza corect:\n{descriere}")
         assert False 

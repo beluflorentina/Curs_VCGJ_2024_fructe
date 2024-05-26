@@ -8,23 +8,23 @@ app = Flask(__name__)
 def index():
     ret = "<h1>Fructe</h1>"
     
-    ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
+    ret += f"<a href={url_for('view_grapefruit')}>Grapefruit - Banica Dragos Marius</a> <br/>"
 
     return ret
 
 
     
-@app.route('/acai', methods=['GET'])
-def view_acai():
-	culoare = culoare_acai()
-	descriere = descriere_acai() 
+@app.route('/grapefruit', methods=['GET'])
+def view_grapefruit():
+	culoare = culoare_grapefruit()
+	descriere = descriere_grapefruit() 
 	
-	ret = "<h1>Acai</h1>"
+	ret = "<h1>Grapefruit</h1>"
 	
 	#Linkuri
 	ret += f"<a href={url_for('index')}>[fructe]</a> | "
-	ret += f"<a href={url_for('view_culoare_acai')}>[culoare]</a> | "
-	ret += f"<a href={url_for('view_descriere_acai')}>[descriere]</a>"
+	ret += f"<a href={url_for('view_culoare_grapefruit')}>[culoare]</a> | "
+	ret += f"<a href={url_for('view_descriere_grapefruit')}>[descriere]</a>"
 	
 	ret += "<h2>Descriere: </h2>"
 	
@@ -38,24 +38,24 @@ def view_acai():
 	return ret
 
 
-@app.route('/acai/culoare', methods=['GET'])
-def view_culoare_acai():
-    culoare = culoare_acai()  
+@app.route('/grapefruit/culoare', methods=['GET'])
+def view_culoare_grapefruit():
+    culoare = culoare_grapefruit()  
     
-    ret = "<h1>Culoarea acai:</h1>"
+    ret = "<h1>Culoarea grapefruit:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
-    ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
+    ret += f"<a href={url_for('view_grapefruit')}>[grapefruit]</a> <br/> <br/>"
     ret += culoare
     
     return ret
 
-@app.route('/acai/descriere', methods=['GET'])
-def view_descriere_acai():
-    descriere = descriere_acai()  
+@app.route('/grapefruit/descriere', methods=['GET'])
+def view_descriere_grapefruit():
+    descriere = descriere_grapefruit()  
     
-    ret = "<h1>Descriere acai:</h1>"
+    ret = "<h1>Descriere grapefruit:</h1>"
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
-    ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
+    ret += f"<a href={url_for('view_grapefruit')}>[grapefruit]</a> <br/> <br/>"
     ret += descriere
     
     return ret
