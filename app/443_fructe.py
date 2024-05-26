@@ -9,10 +9,60 @@ def index():
     ret = "<h1>Fructe</h1>"
     
     ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
+    
+    ret += f"<a href={url_for('view_capsuna')}>Capsuna - Voicu Elena</a> <br/>"
 
     return ret
 
 
+@app.route('/capsuna', methods=['GET'])
+def view_capsuna():
+	culoare = culoare_capsuna()
+	descriere = descriere_capsuna() 
+	
+	ret = "<h1>Capsuna</h1>"
+	
+	#Linkuri
+	ret += f"<a href={url_for('index')}>[fructe]</a> | "
+	ret += f"<a href={url_for('view_culoare_capsuna')}>[culoare]</a> | "
+	ret += f"<a href={url_for('view_descriere_capsuna')}>[descriere]</a>"
+	
+	ret += "<h2>Descriere: </h2>"
+	
+	ret += descriere 
+	
+	ret += "<h2>Culoare: </h2>"
+	ret += culoare
+	
+	
+	
+	return ret
+
+
+@app.route('/capsuna/culoare', methods=['GET'])
+def view_culoare_capsuna():
+    culoare = culoare_capsuna()  
+    
+    ret = "<h1>Culoarea capsuna:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_capsuna')}>[capsuna]</a> <br/> <br/>"
+    ret += culoare
+    
+    return ret
+
+@app.route('/capsuna/descriere', methods=['GET'])
+def view_descriere_capsuna():
+    descriere = descriere_capsuna()  
+    
+    ret = "<h1>Descriere capsuna:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_capsuna')}>[capsuna]</a> <br/> <br/>"
+    ret += descriere
+    
+    return ret
+    
+    
+    
     
 @app.route('/acai', methods=['GET'])
 def view_acai():
