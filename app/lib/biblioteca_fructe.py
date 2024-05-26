@@ -1,0 +1,5 @@
+def culoare_banana():
+    return "The color of a banana typically varies depending on its ripeness.Here are the common stages and their corresponding colors: \n 1.Unripe banana:The banana is mostly green.The color ranges from a dark green to a lighter green as it starts to ripen. \n 2.Ripening banana: As the banana ripens , it transitions from green to a greenish-yellow. \n 3.Ripe banana: When fully ripe, the banana is a vibrant yellow. This is the most familiar and commonly recognized color of a banana. \n Overall, a banana's color can be described as a gradient from green to yellow."
+
+def descriere_banana():
+    return "A banana is a long, curved fruit with a smooth, yellow peel and soft, sweet flesh inside. It is one of the most popular and widely consumed fruits in the world, known for its convenient natural packaging and ease of consumption. \n Overall,bananas are beloved for their versatilty, nutritional benefits, and delicious taste, making them a dietary staple in many households."
