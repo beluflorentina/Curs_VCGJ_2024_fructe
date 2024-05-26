@@ -1,5 +1,7 @@
 # Curs_VCGJ_2024_fructe
 
+# Utilizator DanSandu1609
+
 # Cuprins
 
 1. [Descriere aplicatie](#descriere-aplicatie)
@@ -111,6 +113,8 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 
 - **pylint** - pachet python folosit la testarea calitatii codului (spatii, nume variabile, variabile neutilizate etc.)
 - in cazul de fata, problemele returnate de pylint doar sunt afisate, nu sunt considerate erori
+
+# Functionalitate aplicatie
 
 
 
