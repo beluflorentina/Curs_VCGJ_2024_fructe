@@ -118,5 +118,5 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 [cuprins](#cuprins)
 - CI = Continuous Integration
 
-Pipeline-ul Jenkins automatizeaza procesyl de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
+Pipeline-ul Jenkins automatizeaza procesul de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
 
