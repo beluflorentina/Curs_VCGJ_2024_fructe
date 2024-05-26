@@ -76,7 +76,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-Pentru a testa ca sa instalarea s-a facut corect, se poate containeriza imaginea ```hello-world``` oferita de Docker
+Pentru a testa ca instalarea s-a facut corect, se poate containeriza imaginea ```hello-world``` oferita de Docker
 ```sudo docker run hello-world```
 
 ## Clonare repo si activare venv
