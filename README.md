@@ -118,6 +118,9 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 
 ![imagine1](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/ebf4cbf3-058b-4acb-8b10-98f47bfea079)
 
+![imagine2](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/7d939c45-a08e-476d-9ed5-95303a627fef)
+
+
 
 
 
