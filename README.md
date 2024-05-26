@@ -108,6 +108,9 @@ Testul compara valoarea obtinuta la apelul functie cu valoarea asteptata si retu
 
 Pentru testare s-a folosit pachetul **pytest** din python. 
 
+![pytest](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/b76196f8-855d-4716-ad73-d82efea3b852)
+
+
 
 
 # Verificare statica cu pylint
