@@ -66,13 +66,13 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
 
    # Creare si rulare container
    cd ..
-   docker build -t imagine-aplicatie
-   docker run -p 8080:500 --name container-aplicatie imagine-aplicatie
+   docker build -t aplicatie_fructe:v1 .
+   docker run -p 8080:500 --name container-aplicatie aplicatie_fructe:v1
    
    # Incarcare imagine pe Docker Hub
    docker login
-   docker tag imagine-aplicatie beluflorentina/imagine_aplicatie:latest
-   docker push beluflorentina/imagine_aplicatie:latest
+   docker tag aplicatie_fructe:v1 beluflorentina/aplicatie_fructe:v1
+   docker push beluflorentina/aplicatie_fructe:v1
    
    # Testare
    cd app/test
