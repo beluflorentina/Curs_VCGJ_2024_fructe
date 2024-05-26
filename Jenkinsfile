@@ -44,7 +44,7 @@ pipeline {
                         echo "Virtual environment activated."
                         echo "sys.path: $(python -c 'import sys; print(sys.path)')"
                         echo "Current working directory: $(pwd)"
-                        pytest -v
+                        python3 -m pytest -v
                     '''
                 }
             }
