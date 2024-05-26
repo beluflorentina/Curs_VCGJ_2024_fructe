@@ -1,5 +1,7 @@
 # Curs_VCGJ_2024_fructe
 
+# Utilizator DanSandu1609
+
 # Cuprins
 
 1. [Descriere aplicatie](#descriere-aplicatie)
@@ -112,6 +114,15 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 - **pylint** - pachet python folosit la testarea calitatii codului (spatii, nume variabile, variabile neutilizate etc.)
 - in cazul de fata, problemele returnate de pylint doar sunt afisate, nu sunt considerate erori
 
+# Functionalitate aplicatie
+![imagine2](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/7d939c45-a08e-476d-9ed5-95303a627fef)
+
+![imagine1](https://github.com/beluflorentina/Curs_VCGJ_2024_fructe/assets/161347099/ebf4cbf3-058b-4acb-8b10-98f47bfea079)
+
+
+
+
+
 
 
 # DevOps CI
@@ -119,3 +130,4 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 - CI = Continuous Integration
 
 Pipeline-ul Jenkins automatizeaza procesul de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
+
