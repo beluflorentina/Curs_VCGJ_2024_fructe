@@ -1,30 +1,37 @@
 import logging
+import sys
+import os
+import lib.biblioteca_fructe as fructe
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-import sys
-sys.path.append("../")
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../app')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../app/lib')))
 
-import lib.biblioteca_fructe as fructe
+print("sys.path:", sys.path)  # Debugging
+print("Current working directory:", os.getcwd())  # Debugging
 
 
 
-def test_culoare_acai():
-    culoare = fructe.culoare_acai()
 
-    if "rich purple color" in culoare:
-        logger.info(f"Functia culoare_acai functioneaza corect: {culoare}")
+def test_culoare_pitaya():
+    culoare = fructe.culoare_pitaya()
+
+    if "vibrantă de roz sau galben" in culoare:
+        logger.info(f"Functia culoare_pitaya functioneaza corect: {culoare}")
         assert True
     else:
-        logger.error(f"Functia culoare_acai NU functioneaza corect: {culoare}")
+        logger.error(f"Functia culoare_pitaya NU functioneaza corect: {culoare}")
         assert False
 
-def test_descriere_acai():
-    descriere = fructe.descriere_acai()
+def test_descriere_pitaya():
+    descriere = fructe.descriere_pitaya()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
-        logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
+    if "Pitaya, cunoscută și ca fructul dragonului" in descriere:
+        logger.info(f"Functia descriere_pitaya functioneaza corect:\n{descriere}")
         assert True
     else:
-        logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
-        assert False 
+        logger.error(f"Functia descriere_pitaya NU functioneaza corect:\n{descriere}")
+        assert False
+
