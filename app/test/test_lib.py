@@ -5,12 +5,12 @@ logger = logging.getLogger(__name__)
 import sys
 sys.path.append("../")
 
-import lib.biblioteca_fructe as fructe
-
+#import from lib.biblioteca_fructe
+from lib.biblioteca_fructe import descriere_pepene, culoare_pepene
 
 
 def test_culoare_pepene():
-    culoare = fructe.culoare_pepene()
+    culoare = culoare_pepene()
 
     if "red inside" in culoare:
         logger.info(f"Functia culoare_pepene functioneaza corect: {culoare}")
@@ -20,7 +20,7 @@ def test_culoare_pepene():
         assert False
 
 def test_descriere_pepene():
-    descriere = fructe.descriere_pepene()
+    descriere = descriere_pepene()
 
     if "Absolutely brilliant on a hot summer" in descriere:
         logger.info(f"Functia descriere_pepene functioneaza corect:\n{descriere}")
@@ -28,3 +28,6 @@ def test_descriere_pepene():
     else:
         logger.error(f"Functia descriere_pepene NU functioneaza corect:\n{descriere}")
         assert False 
+        
+test_culoare_pepene()
+test_descriere_pepene()
