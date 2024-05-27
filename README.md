@@ -8,4 +8,4 @@
 Nu am reusit sa identific cauza 
 ## 3. Containerizare
 ![test](.imagini/imagine_docker.png)
-![test](.imagini/containerizare.png)git 
+![test](.imagini/containerizare.png)
