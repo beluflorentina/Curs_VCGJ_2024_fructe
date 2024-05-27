@@ -22,6 +22,7 @@
 - Fruct: **capsune** - _Elena Voicu_ - branch `main_Voicu_Elena`
 - Fruct: **pepene** - _Vlad Voicu_ - branch `main_Voicu_Vlad`
 - Fruct: **pytaia** - _Andrei Tanasescu_ - branch `main_Tanasescu_Andrei`
+- Fruct: **banana** - _Dan-Mihai Sandu_ - branch `main_Sandu_Dan`
 
 
 
