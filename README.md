@@ -66,13 +66,13 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
 
    # Creare si rulare container
    cd ..
-   docker build -t imagine-aplicatie
-   docker run -p 8080:500 --name container-aplicatie imagine-aplicatie
+   docker build -t aplicatie_fructe:v1 .
+   docker run -p 8080:500 --name container-aplicatie aplicatie_fructe:v1
    
    # Incarcare imagine pe Docker Hub
    docker login
-   docker tag imagine-aplicatie beluflorentina/imagine_aplicatie:latest
-   docker push beluflorentina/imagine_aplicatie:latest
+   docker tag aplicatie_fructe:v1 beluflorentina/aplicatie_fructe:v1
+   docker push beluflorentina/aplicatie_fructe:v1
    
    # Testare
    cd app/test
@@ -95,6 +95,11 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    
 ```
 
+![Build imagine](images/docker_build.png)
+
+![Rulare container si functionare aplicatie](images/docker_run.png)
+
+![Push in Docker Hub](images/dockerhub_push.png)
 
 # Testare cu pytest
 [cuprins](#cuprins)
@@ -104,13 +109,16 @@ Testul compara valoarea obtinuta la apelul functie cu valoarea asteptata si retu
 
 Pentru testare s-a folosit pachetul **pytest** din python. 
 
+![Pytest](images/pytest.png)
+
 
 
 # Verificare statica cu pylint
 [cuprins](#cuprins)
 
 - **pylint** - pachet python folosit la testarea calitatii codului (spatii, nume variabile, variabile neutilizate etc.)
-- in cazul de fata, problemele returnate de pylint doar sunt afisate, nu sunt considerate erori
+
+![Pylint](images/pylint.png)
 
 
 
@@ -118,4 +126,7 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 [cuprins](#cuprins)
 - CI = Continuous Integration
 
-Pipeline-ul Jenkins automatizeaza procesyl de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
+Pipeline-ul Jenkins automatizeaza procesul de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
+Testarea se face pe ambele branch-uri, devel_Belu_Florentina si main_Belu_FLorentina.
+
+![Testare Jenkins](images/testare_jenkins.png)
