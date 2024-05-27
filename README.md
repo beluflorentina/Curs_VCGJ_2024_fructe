@@ -6,7 +6,7 @@
 1. [Configurare](#configurare)
 1. [Rularea aplicatiei prin flask](#Rularea-aplicatiei-prin-flask)
 1. [Rularea aplicatiei prin docker](#Rularea-aplicatiei-prin-docker)
-1. [DevOps](#devops-ci)
+
 
    
 
