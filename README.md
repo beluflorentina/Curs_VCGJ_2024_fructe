@@ -9,7 +9,6 @@ Funda Gheorghe : caise.
 3. [Lintare & testare](#lintare--testare)
 4. [Rulare aplicatie](#rulare-aplicatie)
 5. [DevOps Continuous Integration](#continuous-integration)
-6. [Flow Git](#flow-git)
 
 
 # Descriere aplicatie
@@ -29,8 +28,8 @@ Aplicatia include suport pentru containerizare in fisierul Dockerfile din direct
 Din punct de vedere al testarii, aceasta poate fi realizata fie prin utilizarea pytest, ori prin pipeline-ul Jenkins. Jenkins ne ofera o testare automatizata, aceasta cloneaza codul, creeaza mediul virtual si ruleaza unit-test-urile.
 
 # Pregatire mediu de lucru
-
-## Creare spatiu de lucru si clonare aplicatie:
+```
+Creare spatiu de lucru si clonare aplicatie:
 mkdir proiect_final
 cd proiect_final
 git clone https://github.com/beluflorentina/Curs_VCGJ_2024_fructe.git
@@ -38,32 +37,38 @@ git clone https://github.com/beluflorentina/Curs_VCGJ_2024_fructe.git
 cd Curs_VCGJ_2024_fructe
 git checkout devel_Funda_Geo
 
-## Creare mediu virtual
+Creare mediu virtual:
+
 python3 -m venv .venv
 . .venv/bin/activate
 
-## Instalare pachete
+Instalare pachete:
+
 pip install flask
 pip install pytest
 pip install pylint
 
-## Rulare locala a aplicatiei
+Rulare locala a aplicatiei:
+
 cd app
 flash --app 443_fructe.py run --debug
 
-## Rulare folosind containere
+Rulare folosind containere:
+
 cd ..
 docker build -t imagine_caisa_final .
 docker run -p 5000:5000 -- imagine_caisa_final
 
-## Testare folosind pytest
+Testare folosind pytest:
+
 cd app
 pytest .
 
-## Testare folosind jenkins
+Testare folosind jenkins:
+
 sudo systemctl start jenkins
 accesare server si creeare pipeline
-
+```
 
 
 # Lintare & testare
