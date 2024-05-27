@@ -21,6 +21,7 @@
 - Fruct: **corcoduse** - _Razvan Tufeanu_ - branch `main_Tufeanu_Razvan`
 - Fruct: **capsune** - _Elena Voicu_ - branch `main_Voicu_Elena`
 - Fruct: **pepene** - _Vlad Voicu_ - branch `main_Voicu_Vlad`
+- Fruct: **pytaia** - _Andrei Tanasescu_ - branch `main_Tanasescu_Andrei`
 
 
 
