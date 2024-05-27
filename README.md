@@ -96,8 +96,10 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
 ```
 
 ![Build imagine](images/docker_build.png)
+
 ![Rulare container si functionare aplicatie](images/docker_run.png)
-![Push in Docker Hub](images/dockerhub_push)
+
+![Push in Docker Hub](images/dockerhub_push.png)
 
 # Testare cu pytest
 [cuprins](#cuprins)
@@ -124,4 +126,7 @@ Pentru testare s-a folosit pachetul **pytest** din python.
 [cuprins](#cuprins)
 - CI = Continuous Integration
 
-Pipeline-ul Jenkins automatizeaza procesyl de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
+Pipeline-ul Jenkins automatizeaza procesul de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
+Testarea se face pe ambele branch-uri, devel_Belu_Florentina si main_Belu_FLorentina.
+
+![Testare Jenkins](images/testare_jenkins.png)
