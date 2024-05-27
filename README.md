@@ -3,7 +3,7 @@
 # Descriere aplicatie
 
 Aplicatia afiseaza informatii despre fructe intr-o pagina web. 
-Aplicatia este simpla, afiseaza informatii despre descrierea si culoarea fructului cu ajutoru functiilor culoare_acai() si descriere_acai().
+Aplicatia este simpla, afiseaza informatii despre descrierea si culoarea fructului cu ajutoru functiilor culoare_pomelo() si descriere_pomelo().
 Informatiile sunt preluate apoi in functiile de tip `view` specifice fiecarei pagini si returnate clientului WEB care apeleaza serverul.
 
 Rutele pentru pagini:
