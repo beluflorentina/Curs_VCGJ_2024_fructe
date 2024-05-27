@@ -4,27 +4,27 @@
 
 1. [Descriere aplicatie](#descriere-aplicatie)
 1. [Configurare](#configurare)
-1. [Testare cu pytest](#testare-cu-pytest)
-1. [Verificare statica. pylint - calitate cod](#verificare-statica-cu-pylint)
+1. [Rularea aplicatiei prin flask](#Rularea-aplicatiei-prin-flask)
+1. [Rularea aplicatiei prin docker](#Rularea-aplicatiei-prin-docker)
 1. [DevOps](#devops-ci)
 
    
 
 # Descriere aplicatie
 
-Aplicatia afiseaza informatii despre fructe intr-o pagina web. A fost testata pe Ubuntu 22.04.
+Aplicatia afiseaza informatii despre fructe intr-o pagina web. A fost dezvoltata si testata pe Ubuntu 22.04
 Componenta WEB a aplicatiei se bazeaza pe framework-ul `Flask`.
-Aplicatia este simpla, afiseaza informatii despre descrierea si culoarea fructului cu ajutoru functiilor culoare_acai() si descriere_acai().
+Aplicatia este simpla, afiseaza informatii despre descrierea si culoarea fructului cu ajutoru functiilor culoare_corcoduse() si descriere_corcoduse().
 Informatiile sunt preluate apoi in functiile de tip `view` specifice fiecarei pagini si returnate clientului WEB care apeleaza serverul.
+Aplicaia are un fisier de library definit in app/lib/biblioteca_fructe.py unde se gasesc functiile ce intorc detaliile fructelor.
 
-Pentru o navigare mai usoara in browser, fiecare pagina contine link-uri catre celelalte pagini.
 
 Rutele pentru pagini sunt:
  * ruta standard '/' - URL: http://127.0.0.1:5000
  * rute in aplicatia WEB pentru:
-   * fruct:     '/acai' - URL: 'http://127.0.0.1:5000/acai',
-   * culoare:   '/culoare' -                        .../acai/culoare
-   * descriere: '/descriere' -                      .../acai/descriere
+   * fruct:     '/corcoduse' - URL: 'http://127.0.0.1:5000/corcoduse',
+   * culoare:   '/culoare' -                        .../corcoduse/culoare
+   * descriere: '/descriere' -                      .../corcoduse/descriere
 
 Aplicatia include suport pentru containerizare in fisierul `Dockerfile` din directorul principal al aplicatiei.
 
@@ -41,7 +41,7 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
 
 ```text 
    # Creare spatiu de lucru si clonare aplicatie:   
-   mkdir fructe
+   mkdir fruct
    cd fructe
    git clone https://github.com/beluflorentina/Curs_VCGJ_2024_fructe.git
 
@@ -93,29 +93,52 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    jenkins
    # Accesare server Jenkins din browser la 127.0.0.1:8080
    
+   #NOTA: Daca nu aveti git instalat
+   sudo apt install git
+
+   sudo apt update
+   sudo apt upgrade -y
+   sudo apt install python3
+   sudo apt install python3-pip
+   sudo apt-get install python3-venv
+   
 ```
 
 
-# Testare cu pytest
+# Rularea aplicatiei prin flask
 [cuprins](#cuprins)
 
-Functiile din biblioteca de functii a aplicatie au teste de tip 'unit - test' asociate - adica - este apelata functia si se asteapta o anumita valoare.
-Testul compara valoarea obtinuta la apelul functie cu valoarea asteptata si returneaza True daca valoarea primita de la functie este cea asteptata si False in caz contrar.
-
-Pentru testare s-a folosit pachetul **pytest** din python. 
+Se activeaza virtual environment-ul pentru a avea acces la Flask:
 
 
+```
+source .venv/bin/activate
+```
 
-# Verificare statica cu pylint
+Pentru rularea aplicatiei folosind Flask:
+```
+flask --app app/443_fructe.py run
+``` 
+Accesand http://127.0.0.1:5000 in browser, ar trebui sa se incarce pagina "Fructe"
+
+
+
+#Rularea aplicatiei prin docker
 [cuprins](#cuprins)
 
-- **pylint** - pachet python folosit la testarea calitatii codului (spatii, nume variabile, variabile neutilizate etc.)
-- in cazul de fata, problemele returnate de pylint doar sunt afisate, nu sunt considerate erori
+Pentru rularea aplicatiei folosind Docker, se ruleaza urmatoarele comenzi:
+
+```
+sudo docker build -t <numecontainer> .
+sudo docker run -dp 127.0.0.1:5000:5000 <numecontainer>
+```
+
+Pentru a lista containerele docker care ruleaza, se foloseste comanda
+```
+sudo docker ps
+```
+
+In continuare aplicatia va rula tot la 127.0.0.1:5000
+```
 
 
-
-# DevOps CI
-[cuprins](#cuprins)
-- CI = Continuous Integration
-
-Pipeline-ul Jenkins automatizeaza procesyl de build, test si deploy pentru o aplicatie. Jenkinsfile este un script care defineste pipeline-ul Jenkins.
