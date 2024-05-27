@@ -35,20 +35,22 @@ pipeline {
             }
         }
         
-        stage('Unit Testing') {
-            steps {
-                script {
-                    echo 'Running Unit Tests...'
-                    sh '''
-                        . .venv/bin/activate
-                        echo "Virtual environment activated."
-                        echo "sys.path: $(python -c 'import sys; print(sys.path)')"
-                        echo "Current working directory: $(pwd)"
-                        python3 -m pytest -v
-                    '''
-                }
-            }
+      stage('Unit Testing') {
+    steps {
+        script {
+            echo 'Running Unit Tests...'
+            sh '''
+                . .venv/bin/activate
+                echo "Virtual environment activated."
+                export PYTHONPATH=$PYTHONPATH:/var/lib/jenkins/workspace/item/app
+                echo "PYTHONPATH: $PYTHONPATH"
+                echo "sys.path: $(python -c 'import sys; print(sys.path)')"
+                echo "Current working directory: $(pwd)"
+                python3 -m pytest -v
+            '''
         }
+    }
+}
         
         stage('Build Docker Image') {
             steps {

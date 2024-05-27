@@ -13,6 +13,8 @@ COPY . /app
 
 ENV FLASK_APP ./app/443_fructe.py
 
+ENV PYTHONPATH="${PYTHONPATH}:/app"
+
 EXPOSE 5000
 
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
