@@ -3,3 +3,9 @@ def culoare_acai():
 
 def descriere_acai():
     return "The acai fruit, scientifically known as Euterpe oleracea, is a small, dark purple berry that grows on the acai palm tree native to the Amazon rainforest in South America. Renowned for its exceptional nutritional profile, the acai berry has gained popularity worldwide as a superfood. It is rich in antioxidants, vitamins, minerals, and essential fatty acids, making it a prized ingredient in health-conscious diets.The acai fruit has a unique flavor profile that blends notes of berry and chocolate, with a hint of earthiness. Its texture is creamy and smooth, akin to that of a ripe avocado.\n Traditionally, acai berries are consumed fresh or in the form of acai bowls, smoothies, juices, or supplements.\n Beyond its nutritional benefits, the acai fruit holds cultural significance among indigenous communities in the Amazon, where it has been consumed for centuries for its purported health benefits and energy-boosting properties.\n Overall, the acai fruit is celebrated for its exceptional taste, nutritional richness, and cultural heritage, making it a crished component of healthy lifestyles worldwide."
+
+def culoare_ananas():
+	return "A pineapple is mostly yellow with a touch of green. In the RGB color model #563c0d is composed of 33.73% red, 23.53% green and 5.1% blue."
+
+def descriere_ananas():
+	return "The pineapple (Ananas comosus) is a tropical plant with an edible fruit. In the wild, pineapples are pollinated primarily by hummingbirds.[2][7] Certain wild pineapples are foraged and pollinated at night by bats. The introduction of the pineapple plant to Europe in the 17th century made it a significant cultural icon of luxury."
