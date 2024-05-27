@@ -1,20 +1,17 @@
-FROM python:3.10
+FROM python:3.8-alpine
 
-RUN pip install --upgrade pip
+ENV FLASK_APP 443D_pomelo
+RUN adduser -D andra1402
 
-RUN pip install flask
+USER andra1402
 
-RUN pip install pytest
-
-WORKDIR /app
-
-COPY . /app
-
-
-ENV FLASK_APP ./app/443_fructe.py
-
-EXPOSE 5000
-
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
-
-
+WORKDIR /home/Desktop/curs_vcgj_443D_fructe
+COPY app app
+RUN python -m venv .venv
+RUN .venv/bin/pip install -r app/requirements.txt
+USER root
+RUN chmod +x app/dockerstart.sh
+USER andra1402
+WORKDIR /home/Desktop/curs_vcgj_443D_fructe/app
+EXPOSE 5011
+CMD ["./dockerstart.sh"]

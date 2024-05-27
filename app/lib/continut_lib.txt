@@ -1,2 +1,0 @@
-Se va crea in app/lib/biblioteca_<nume_tema>.py doua functii specifice elementului (exempu: in app/lib/biblioteca_fructe.py,
-functiile: culoare_mar(), descriere_mar() care sa afiseze informatii sugerate de titlu.
