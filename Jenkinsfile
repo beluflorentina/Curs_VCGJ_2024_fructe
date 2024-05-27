@@ -32,8 +32,8 @@ pipeline {
 		    fi
 		    
                     pylint --exit-zero lib/*.py
-                    pylint --exit-zero tests/*.py
-                    pylint --exit-zero sysinfo.py
+                    pylint --exit-zero test/*.py
+                    pylint --exit-zero 443_fructe.py
                 '''
             }
         }
@@ -43,7 +43,8 @@ pipeline {
             	echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate
-                    pytest
+                    cd app
+                    python3 -m pytest -v
                 '''
             }
         }
@@ -51,7 +52,12 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo "Build ID: ${BUILD_NUMBER}"
+                echo "Creare imagine docker"
+                sh '''
+                    docker build -t caisa:v${BUILD_NUMBER} .
+                    docker create --name caisa${BUILD_NUMBER} -p 5000:5000 caisa:v${BUILD_NUMBER}
+                '''
             }
         }
     }
