@@ -39,7 +39,5 @@ def ia_clasificare_pomelo():
     ret += librarie.biblioteca_pomelo.clasificare_pomelo()
     
     return ret
-    
-    
-       
+
 app.run(host = "127.0.0.1", port = 5001)
