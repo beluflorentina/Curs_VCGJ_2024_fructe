@@ -95,6 +95,9 @@ Pipeline-ul cloneaza codul, creeaza mediul de lucru virtual (venv-ul), il active
    
 ```
 
+![Build imagine](images/docker_build.png)
+![Rulare container si functionare aplicatie](images/docker_run.png)
+![Push in Docker Hub](images/dockerhub_push)
 
 # Testare cu pytest
 [cuprins](#cuprins)
@@ -104,13 +107,16 @@ Testul compara valoarea obtinuta la apelul functie cu valoarea asteptata si retu
 
 Pentru testare s-a folosit pachetul **pytest** din python. 
 
+![Pytest](images/pytest.png)
+
 
 
 # Verificare statica cu pylint
 [cuprins](#cuprins)
 
 - **pylint** - pachet python folosit la testarea calitatii codului (spatii, nume variabile, variabile neutilizate etc.)
-- in cazul de fata, problemele returnate de pylint doar sunt afisate, nu sunt considerate erori
+
+![Pylint](images/pylint.png)
 
 
 
