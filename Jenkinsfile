@@ -55,8 +55,8 @@ pipeline {
                 echo "Build ID: ${BUILD_NUMBER}"
                 echo "Creare imagine docker"
                 sh '''
-                    docker build -t fructe:v${BUILD_NUMBER} .
-                    docker create --name fructe${BUILD_NUMBER} -p 8020:5000 fructe:v${BUILD_NUMBER}
+                    docker build -t caisa:v${BUILD_NUMBER} .
+                    docker create --name caisa${BUILD_NUMBER} -p 5000:5000 caisa:v${BUILD_NUMBER}
                 '''
             }
         }
