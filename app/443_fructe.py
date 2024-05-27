@@ -107,16 +107,6 @@ def view_descriere_acai():
     return ret
     
     
-@app.cli.command()
-def test():
-    """
-    Rulare 'unit tests'
-    
-    Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
-    
-    """
-    import pytest
-    sys.exit(pytest.main(["."]))
     
 if __name__ == '__main__':
     app.run(host='127.0.0.1')
