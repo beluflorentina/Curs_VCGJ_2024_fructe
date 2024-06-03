@@ -1,76 +1,74 @@
+"""
+O aplicatie simpla in Flask pentru a prezenta fructul kiwi. 
+Include rude catre pagini web cu informatii generale despre fruct
+"""
+
 from flask import Flask, url_for
-from lib.biblioteca_fructe import *
+from lib.biblioteca_fructe import culoare_kiwi, descriere_kiwi
 
 app = Flask(__name__)
 
 
+
 @app.route('/', methods=['GET'])
 def index():
+    """
+    Pagina de acasa care contine linkuri catre toate fructele.
+    """
     ret = "<h1>Fructe</h1>"
-    
-    ret += f"<a href={url_for('view_acai')}>Acai - Belu FLorentina-Alexandra</a> <br/>"
-
+    ret += (
+        f"<a href={url_for('view_kiwi')}>Kiwi -"
+        "Paraschiv Robert-Marian</a> <br/>")
     return ret
 
 
-    
-@app.route('/acai', methods=['GET'])
-def view_acai():
-	culoare = culoare_acai()
-	descriere = descriere_acai() 
-	
-	ret = "<h1>Acai</h1>"
-	
-	#Linkuri
-	ret += f"<a href={url_for('index')}>[fructe]</a> | "
-	ret += f"<a href={url_for('view_culoare_acai')}>[culoare]</a> | "
-	ret += f"<a href={url_for('view_descriere_acai')}>[descriere]</a>"
-	
-	ret += "<h2>Descriere: </h2>"
-	
-	ret += descriere 
-	
-	ret += "<h2>Culoare: </h2>"
-	ret += culoare
-	
-	
-	
-	return ret
 
+@app.route('/kiwi', methods=['GET'])
+def view_kiwi():
+    """
+    Pagina fructului kiwi.
+    """
+    culoare = culoare_kiwi()
+    descriere = descriere_kiwi()
 
-@app.route('/acai/culoare', methods=['GET'])
-def view_culoare_acai():
-    culoare = culoare_acai()  
-    
-    ret = "<h1>Culoarea acai:</h1>"
+    ret = "<h1>Kiwi</h1>"
+    #Linkuri
     ret += f"<a href={url_for('index')}>[fructe]</a> | "
-    ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
-    ret += culoare
-    
-    return ret
+    ret += f"<a href={url_for('view_culoare_kiwi')}>[culoare]</a> | "
+    ret += f"<a href={url_for('view_descriere_kiwi')}>[descriere]</a>"
 
-@app.route('/acai/descriere', methods=['GET'])
-def view_descriere_acai():
-    descriere = descriere_acai()  
-    
-    ret = "<h1>Descriere acai:</h1>"
-    ret += f"<a href={url_for('index')}>[fructe]</a> | "
-    ret += f"<a href={url_for('view_acai')}>[acai]</a> <br/> <br/>"
+    ret += "<h2>Descriere: </h2>"
     ret += descriere
-    
+    ret += "<h2>Culoare: </h2>"
+    ret += culoare
     return ret
-    
-    
-@app.cli.command()
-def test():
+
+
+@app.route('/kiwi/culoare', methods=['GET'])
+def view_culoare_kiwi():
     """
-    Rulare 'unit tests'
-    
-    Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
-    
+    Pagina cu specificatii despre culoarea fructului kiwi.
     """
-    import pytest
-    sys.exit(pytest.main(["."]))
-    
+    culoare = culoare_kiwi()
+    ret = "<h1>Culoarea kiwi:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_kiwi')}>[kiwi]</a> <br/> <br/>"
+    ret += culoare
+    return ret
+
+@app.route('/kiwi/descriere', methods=['GET'])
+def view_descriere_kiwi():
+    """
+    Pagina cu specificatii despre descrierea fructului kiwi.
+    """
+    descriere = descriere_kiwi()
+    ret = "<h1>Descriere kiwi:</h1>"
+    ret += f"<a href={url_for('index')}>[fructe]</a> | "
+    ret += f"<a href={url_for('view_kiwi')}>[kiwi]</a> <br/> <br/>"
+    ret += descriere
+    return ret
+
+
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1')
